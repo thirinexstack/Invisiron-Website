@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { assetPath } from "../config/assets";
 import { routes } from "../config/routes";
 
@@ -29,16 +29,33 @@ const testimonials = [
   },
 ];
 
-const slides = [
+const desktopSlides = [
   [testimonials[0], testimonials[1]],
   [testimonials[1], testimonials[2]],
 ];
 
+const mobileSlides = testimonials.map((testimonial) => [testimonial]);
+
 function TestimonialsStrip() {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const slides = isMobile ? mobileSlides : desktopSlides;
   const currentSlide = slides[slideIndex];
   const showPrevious = () => setSlideIndex((value) => (value === 0 ? slides.length - 1 : value - 1));
   const showNext = () => setSlideIndex((value) => (value + 1) % slides.length);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 980px)");
+    const updateLayout = () => setIsMobile(mediaQuery.matches);
+
+    updateLayout();
+    mediaQuery.addEventListener("change", updateLayout);
+    return () => mediaQuery.removeEventListener("change", updateLayout);
+  }, []);
+
+  useEffect(() => {
+    setSlideIndex((value) => Math.min(value, slides.length - 1));
+  }, [slides.length]);
 
   return (
     <section className="testimonials-strip" id="testimonials">

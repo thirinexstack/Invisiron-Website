@@ -9,17 +9,19 @@ type LogoItem = {
 };
 
 type Post = {
-  type: string;
+  type: "ARTICLES" | "EVENTS" | "NEWS";
   title: string;
   date: string;
   image: string;
   text: string;
+  href?: string;
 };
 
 type ProductItem = {
   name: string;
   image: string;
   text: string;
+  href: string;
 };
 
 export type { FeatureItem, LogoItem, Post, ProductItem };

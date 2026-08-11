@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+		<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="format-detection" content="telephone=no"><script type="text/javascript">var ajaxurl = "https://invisiron.com/wp-admin/admin-ajax.php";</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+		<style id="critical-path-css" type="text/css">
+			body,html{width:100%;height:100%;margin:0;padding:0}.page-preloader{top:0;left:0;z-index:999;position:fixed;height:100%;width:100%;text-align:center}.preloader-preview-area{-webkit-animation-delay:-.2s;animation-delay:-.2s;top:50%;-webkit-transform:translateY(100%);-ms-transform:translateY(100%);transform:translateY(100%);margin-top:10px;max-height:calc(50% - 20px);opacity:1;width:100%;text-align:center;position:absolute}.preloader-logo{max-width:90%;top:50%;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);margin:-10px auto 0 auto;max-height:calc(50% - 20px);opacity:1;position:relative}.ball-pulse>div{width:15px;height:15px;border-radius:100%;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block;-webkit-animation:ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08);animation:ball-pulse .75s infinite cubic-bezier(.2,.68,.18,1.08)}.ball-pulse>div:nth-child(1){-webkit-animation-delay:-.36s;animation-delay:-.36s}.ball-pulse>div:nth-child(2){-webkit-animation-delay:-.24s;animation-delay:-.24s}.ball-pulse>div:nth-child(3){-webkit-animation-delay:-.12s;animation-delay:-.12s}@-webkit-keyframes ball-pulse{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}45%{-webkit-transform:scale(.1);transform:scale(.1);opacity:.7}80%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes ball-pulse{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}45%{-webkit-transform:scale(.1);transform:scale(.1);opacity:.7}80%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}.ball-clip-rotate-pulse{position:relative;-webkit-transform:translateY(-15px) translateX(-10px);-ms-transform:translateY(-15px) translateX(-10px);transform:translateY(-15px) translateX(-10px);display:inline-block}.ball-clip-rotate-pulse>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;top:0;left:0;border-radius:100%}.ball-clip-rotate-pulse>div:first-child{height:36px;width:36px;top:7px;left:-7px;-webkit-animation:ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-scale 1s 0s cubic-bezier(.09,.57,.49,.9) infinite}.ball-clip-rotate-pulse>div:last-child{position:absolute;width:50px;height:50px;left:-16px;top:-2px;background:0 0;border:2px solid;-webkit-animation:ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-rotate 1s 0s cubic-bezier(.09,.57,.49,.9) infinite;-webkit-animation-duration:1s;animation-duration:1s}@-webkit-keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1)}50%{-webkit-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6)}100%{-webkit-transform:rotate(360deg) scale(1);transform:rotate(360deg) scale(1)}}@keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1)}50%{-webkit-transform:rotate(180deg) scale(.6);transform:rotate(180deg) scale(.6)}100%{-webkit-transform:rotate(360deg) scale(1);transform:rotate(360deg) scale(1)}}@-webkit-keyframes ball-clip-rotate-pulse-scale{30%{-webkit-transform:scale(.3);transform:scale(.3)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes ball-clip-rotate-pulse-scale{30%{-webkit-transform:scale(.3);transform:scale(.3)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes square-spin{25%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(0);transform:perspective(100px) rotateX(180deg) rotateY(0)}50%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(180deg);transform:perspective(100px) rotateX(180deg) rotateY(180deg)}75%{-webkit-transform:perspective(100px) rotateX(0) rotateY(180deg);transform:perspective(100px) rotateX(0) rotateY(180deg)}100%{-webkit-transform:perspective(100px) rotateX(0) rotateY(0);transform:perspective(100px) rotateX(0) rotateY(0)}}@keyframes square-spin{25%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(0);transform:perspective(100px) rotateX(180deg) rotateY(0)}50%{-webkit-transform:perspective(100px) rotateX(180deg) rotateY(180deg);transform:perspective(100px) rotateX(180deg) rotateY(180deg)}75%{-webkit-transform:perspective(100px) rotateX(0) rotateY(180deg);transform:perspective(100px) rotateX(0) rotateY(180deg)}100%{-webkit-transform:perspective(100px) rotateX(0) rotateY(0);transform:perspective(100px) rotateX(0) rotateY(0)}}.square-spin{display:inline-block}.square-spin>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;width:50px;height:50px;-webkit-animation:square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite;animation:square-spin 3s 0s cubic-bezier(.09,.57,.49,.9) infinite}.cube-transition{position:relative;-webkit-transform:translate(-25px,-25px);-ms-transform:translate(-25px,-25px);transform:translate(-25px,-25px);display:inline-block}.cube-transition>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;width:15px;height:15px;position:absolute;top:-5px;left:-5px;-webkit-animation:cube-transition 1.6s 0s infinite ease-in-out;animation:cube-transition 1.6s 0s infinite ease-in-out}.cube-transition>div:last-child{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes cube-transition{25%{-webkit-transform:translateX(50px) scale(.5) rotate(-90deg);transform:translateX(50px) scale(.5) rotate(-90deg)}50%{-webkit-transform:translate(50px,50px) rotate(-180deg);transform:translate(50px,50px) rotate(-180deg)}75%{-webkit-transform:translateY(50px) scale(.5) rotate(-270deg);transform:translateY(50px) scale(.5) rotate(-270deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}@keyframes cube-transition{25%{-webkit-transform:translateX(50px) scale(.5) rotate(-90deg);transform:translateX(50px) scale(.5) rotate(-90deg)}50%{-webkit-transform:translate(50px,50px) rotate(-180deg);transform:translate(50px,50px) rotate(-180deg)}75%{-webkit-transform:translateY(50px) scale(.5) rotate(-270deg);transform:translateY(50px) scale(.5) rotate(-270deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.ball-scale>div{border-radius:100%;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block;height:60px;width:60px;-webkit-animation:ball-scale 1s 0s ease-in-out infinite;animation:ball-scale 1s 0s ease-in-out infinite}@-webkit-keyframes ball-scale{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@keyframes ball-scale{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}.line-scale>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block;width:5px;height:50px;border-radius:2px;margin:2px}.line-scale>div:nth-child(1){-webkit-animation:line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.5s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(2){-webkit-animation:line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.4s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(3){-webkit-animation:line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.3s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(4){-webkit-animation:line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.2s infinite cubic-bezier(.2,.68,.18,1.08)}.line-scale>div:nth-child(5){-webkit-animation:line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08);animation:line-scale 1s -.1s infinite cubic-bezier(.2,.68,.18,1.08)}@-webkit-keyframes line-scale{0%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(.4);transform:scaley(.4)}100%{-webkit-transform:scaley(1);transform:scaley(1)}}@keyframes line-scale{0%{-webkit-transform:scaley(1);transform:scaley(1)}50%{-webkit-transform:scaley(.4);transform:scaley(.4)}100%{-webkit-transform:scaley(1);transform:scaley(1)}}.ball-scale-multiple{position:relative;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px);display:inline-block}.ball-scale-multiple>div{border-radius:100%;-webkit-animation-fill-mode:both;animation-fill-mode:both;margin:2px;position:absolute;left:-30px;top:0;opacity:0;margin:0;width:50px;height:50px;-webkit-animation:ball-scale-multiple 1s 0s linear infinite;animation:ball-scale-multiple 1s 0s linear infinite}.ball-scale-multiple>div:nth-child(2){-webkit-animation-delay:-.2s;animation-delay:-.2s}.ball-scale-multiple>div:nth-child(3){-webkit-animation-delay:-.2s;animation-delay:-.2s}@-webkit-keyframes ball-scale-multiple{0%{-webkit-transform:scale(0);transform:scale(0);opacity:0}5%{opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}@keyframes ball-scale-multiple{0%{-webkit-transform:scale(0);transform:scale(0);opacity:0}5%{opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}.ball-pulse-sync{display:inline-block}.ball-pulse-sync>div{width:15px;height:15px;border-radius:100%;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;display:inline-block}.ball-pulse-sync>div:nth-child(1){-webkit-animation:ball-pulse-sync .6s -.21s infinite ease-in-out;animation:ball-pulse-sync .6s -.21s infinite ease-in-out}.ball-pulse-sync>div:nth-child(2){-webkit-animation:ball-pulse-sync .6s -.14s infinite ease-in-out;animation:ball-pulse-sync .6s -.14s infinite ease-in-out}.ball-pulse-sync>div:nth-child(3){-webkit-animation:ball-pulse-sync .6s -70ms infinite ease-in-out;animation:ball-pulse-sync .6s -70ms infinite ease-in-out}@-webkit-keyframes ball-pulse-sync{33%{-webkit-transform:translateY(10px);transform:translateY(10px)}66%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes ball-pulse-sync{33%{-webkit-transform:translateY(10px);transform:translateY(10px)}66%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}.transparent-circle{display:inline-block;border-top:.5em solid rgba(255,255,255,.2);border-right:.5em solid rgba(255,255,255,.2);border-bottom:.5em solid rgba(255,255,255,.2);border-left:.5em solid #fff;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation:transparent-circle 1.1s infinite linear;animation:transparent-circle 1.1s infinite linear;width:50px;height:50px;border-radius:50%}.transparent-circle:after{border-radius:50%;width:10em;height:10em}@-webkit-keyframes transparent-circle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes transparent-circle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.ball-spin-fade-loader{position:relative;top:-10px;left:-10px;display:inline-block}.ball-spin-fade-loader>div{width:15px;height:15px;border-radius:100%;margin:2px;-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;-webkit-animation:ball-spin-fade-loader 1s infinite linear;animation:ball-spin-fade-loader 1s infinite linear}.ball-spin-fade-loader>div:nth-child(1){top:25px;left:0;animation-delay:-.84s;-webkit-animation-delay:-.84s}.ball-spin-fade-loader>div:nth-child(2){top:17.05px;left:17.05px;animation-delay:-.72s;-webkit-animation-delay:-.72s}.ball-spin-fade-loader>div:nth-child(3){top:0;left:25px;animation-delay:-.6s;-webkit-animation-delay:-.6s}.ball-spin-fade-loader>div:nth-child(4){top:-17.05px;left:17.05px;animation-delay:-.48s;-webkit-animation-delay:-.48s}.ball-spin-fade-loader>div:nth-child(5){top:-25px;left:0;animation-delay:-.36s;-webkit-animation-delay:-.36s}.ball-spin-fade-loader>div:nth-child(6){top:-17.05px;left:-17.05px;animation-delay:-.24s;-webkit-animation-delay:-.24s}.ball-spin-fade-loader>div:nth-child(7){top:0;left:-25px;animation-delay:-.12s;-webkit-animation-delay:-.12s}.ball-spin-fade-loader>div:nth-child(8){top:17.05px;left:-17.05px;animation-delay:0s;-webkit-animation-delay:0s}@-webkit-keyframes ball-spin-fade-loader{50%{opacity:.3;-webkit-transform:scale(.4);transform:scale(.4)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes ball-spin-fade-loader{50%{opacity:.3;-webkit-transform:scale(.4);transform:scale(.4)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}		</style>
+
+		
+	<!-- This site is optimized with the Yoast SEO plugin v21.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Blog - Invisiron</title>
+	<link rel="canonical" href="https://invisiron.com/blog/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Blog - Invisiron" />
+	<meta property="og:url" content="https://invisiron.com/blog/" />
+	<meta property="og:site_name" content="Invisiron" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["WebPage","CollectionPage"],"@id":"https://invisiron.com/blog/","url":"https://invisiron.com/blog/","name":"Blog - Invisiron","isPartOf":{"@id":"https://invisiron.com/#website"},"datePublished":"2022-04-07T10:31:51+00:00","dateModified":"2022-04-07T10:31:51+00:00","breadcrumb":{"@id":"https://invisiron.com/blog/#breadcrumb"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://invisiron.com/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://invisiron.com/"},{"@type":"ListItem","position":2,"name":"Blog"}]},{"@type":"WebSite","@id":"https://invisiron.com/#website","url":"https://invisiron.com/","name":"Invisiron","description":"Next-Generation Cyber Defence Systems","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://invisiron.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Invisiron &raquo; Feed" href="https://invisiron.com/feed/" />
+
+<link rel="shortcut icon" href="https://invisiron.com/wp-content/uploads/favicon.ico"  />
+<script type="text/javascript">window.abb = {};php = {};window.PHP = {};PHP.ajax = "https://invisiron.com/wp-admin/admin-ajax.php";PHP.wp_p_id = "";var mk_header_parallax, mk_banner_parallax, mk_page_parallax, mk_footer_parallax, mk_body_parallax;var mk_images_dir = "https://invisiron.com/wp-content/themes/jupiter/assets/images",mk_theme_js_path = "https://invisiron.com/wp-content/themes/jupiter/assets/js",mk_theme_dir = "https://invisiron.com/wp-content/themes/jupiter",mk_captcha_placeholder = "Enter Captcha",mk_captcha_invalid_txt = "Invalid. Try again.",mk_captcha_correct_txt = "Captcha correct.",mk_responsive_nav_width = 1140,mk_vertical_header_back = "Back",mk_vertical_header_anim = "1",mk_check_rtl = true,mk_grid_width = 1140,mk_ajax_search_option = "disable",mk_preloader_bg_color = "#fff",mk_accent_color = "#dda63a",mk_go_to_top =  "true",mk_smooth_scroll =  "true",mk_preloader_bar_color = "#dda63a",mk_preloader_logo = "";mk_typekit_id   = "",mk_google_fonts = ["Lato:100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic,100,200,300,400,500,600,700,800,900"],mk_global_lazyload = true;</script><link rel='stylesheet'  href='https://invisiron.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.9' type='text/css'  />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:#ffffffa6}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:#ffffffa6}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8.3' type='text/css'  />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/min/full-styles.6.4.1.css?ver=1565953676' type='text/css'  />
+<style id='theme-styles-inline-css' type='text/css'>
+body { background-color:#fff; } .hb-custom-header #mk-page-introduce, .mk-header { background-color:#f7f7f7;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover; } .hb-custom-header > div, .mk-header-bg { background-color:#000000; } .mk-classic-nav-bg { background-color:#000000; } .master-holder-bg { background-color:#fff; } #mk-footer { background-color:#000000; } #mk-boxed-layout { -webkit-box-shadow:0 0 px rgba(0, 0, 0, ); -moz-box-shadow:0 0 px rgba(0, 0, 0, ); box-shadow:0 0 px rgba(0, 0, 0, ); } .mk-news-tab .mk-tabs-tabs .is-active a, .mk-fancy-title.pattern-style span, .mk-fancy-title.pattern-style.color-gradient span:after, .page-bg-color { background-color:#fff; } .page-title { font-size:20px; color:#4d4d4d; text-transform:uppercase; font-weight:400; letter-spacing:2px; } .page-subtitle { font-size:14px; line-height:100%; color:#a3a3a3; font-size:14px; text-transform:none; } .mk-header { border-bottom:1px solid #ededed; } .header-style-1 .mk-header-padding-wrapper, .header-style-2 .mk-header-padding-wrapper, .header-style-3 .mk-header-padding-wrapper { padding-top:91px; } .mk-process-steps[max-width~="950px"] ul::before { display:none !important; } .mk-process-steps[max-width~="950px"] li { margin-bottom:30px !important; width:100% !important; text-align:center; } .mk-event-countdown-ul[max-width~="750px"] li { width:90%; display:block; margin:0 auto 15px; } .compose-mode .vc_element-name .vc_btn-content { height:auto !important; } body, h1, h2, h3, h4, h5, h6, p:not(.form-row):not(.woocommerce-mini-cart__empty-message):not(.woocommerce-mini-cart__total):not(.woocommerce-mini-cart__buttons):not(.mk-product-total-name):not(.woocommerce-result-count), .woocommerce-customer-details address, a, textarea,input,select,button, #mk-page-introduce, .the-title, .vm-header-copyright, .mk-footer-copyright, .mk-content-box, .mk-button { font-family:Lato } @font-face { font-family:'star'; src:url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot'); src:url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.eot?#iefix') format('embedded-opentype'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.woff') format('woff'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.ttf') format('truetype'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/star/font.svg#star') format('svg'); font-weight:normal; font-style:normal; } @font-face { font-family:'WooCommerce'; src:url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot'); src:url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.eot?#iefix') format('embedded-opentype'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.woff') format('woff'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.ttf') format('truetype'), url('https://invisiron.com/wp-content/themes/jupiter/assets/stylesheet/fonts/woocommerce/font.svg#WooCommerce') format('svg'); font-weight:normal; font-style:normal; }<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/026dc035a6f309e98d564dba4/7893fcaf35780ef03e8f23bbb.js");</script> .Header-SME-Icon{ padding-top:14px; } #media_image-5{ margin-left:35px; } #media_image-6{ margin-top:1px; margin-left:40px; } #media_image-4{ margin-left:35px; } #media_image-3{ margin-left:35px; } sup { font-size:0.6em; top:0em !important; } #input_6_1 { opacity:1 !important; } #testimonial_15 .mk-testimonial-author { font-size:25px !important; padding-left:10px; font-weight:800 !important; line-height:normal !important; } .mk-footer-copyright { padding-left:45px; } .mk-testimonial .flex-direction-nav svg{ fill:#000000 !important; height:50px; } .mk-testimonial.boxed-style .flex-direction-nav .flex-prev { padding-right:50px!important; } .gform_wrapper .field_description_below .gfield_description { padding-top:16px; padding-bottom:16px; padding-left:16px; padding-right:16px; } }
+</style>
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/themes/jupiter/header-builder/includes/assets/css/mkhb-render.css?ver=6.4.1' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/themes/jupiter/header-builder/includes/assets/css/mkhb-row.css?ver=6.4.1' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/themes/jupiter/header-builder/includes/assets/css/mkhb-column.css?ver=6.4.1' type='text/css'  />
+<!--[if lt IE 9]>
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/js_composer_theme/assets/css/vc_lte_ie9.min.css?ver=6.0.5' type='text/css'  />
+<![endif]-->
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/uploads/mk_assets/theme-options-production-1748331309.css?ver=1748331305' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css?ver=3.2.14' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/uploads/masterslider/custom.css?ver=1.1' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/jupiter-donut/assets/css/shortcodes-styles.min.css?ver=1.0.2' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/themes/jupiter-child/style.css?ver=6.5.9' type='text/css'  />
+<script type="text/javascript" src="https://invisiron.com/wp-content/themes/jupiter/assets/js/plugins/wp-enqueue/min/webfontloader.js?ver=6.5.9" id="mk-webfontloader-js"></script>
+<script type="text/javascript" id="mk-webfontloader-js-after">
+/* <![CDATA[ */
+WebFontConfig = {
+	timeout: 2000
+}
+
+if ( mk_typekit_id.length > 0 ) {
+	WebFontConfig.typekit = {
+		id: mk_typekit_id
+	}
+}
+
+if ( mk_google_fonts.length > 0 ) {
+	WebFontConfig.google = {
+		families:  mk_google_fonts
+	}
+}
+
+if ( (mk_google_fonts.length > 0 || mk_typekit_id.length > 0) && navigator.userAgent.indexOf("Speed Insights") == -1) {
+	WebFont.load( WebFontConfig );
+}
+		
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://invisiron.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8.3" id="tp-tools-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8.3" id="revmin-js"></script>
+<link rel="https://api.w.org/" href="https://invisiron.com/wp-json/" /><meta name="generator" content="WordPress 6.5.9" />
+<script>var ms_grabbing_curosr='https://invisiron.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://invisiron.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.2.14 - Responsive Touch Image Slider" />
+<meta itemprop="author" content="Wilgrafe Arriola" /><meta itemprop="datePublished" content="September 25, 2023" /><meta itemprop="dateModified" content="September 25, 2023" /><meta itemprop="publisher" content="Invisiron" /><script> var isTest = false; </script><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZL9ZP3');</script>
+<!-- End Google Tag Manager --><script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			.kg-blog-contentarea .kg_blog_row .kg-col-lg-4 .card a figure img, .kg-blog-inner .innerto-wrap .blog-info .blog-img-wrap figure img {
+	object-fit: fill !important;
+}
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background-color: #DDA741 !important;
+	border: none !important;
+    color: #000 !important;
+}
+
+div#validation_message_6_1, .validation_error {
+	color: #eee !important;
+}		</style>
+		<meta name="generator" content="Jupiter Child Theme " /><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		<link rel="stylesheet" href="/wp-content/themes/jupiter-child/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/jupiter-child/fancybox/jquery.fancybox.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/jupiter-child/owlcarousel/assets/owl.theme.default.min.css" media="screen" />
+	<link rel="stylesheet" href="/wp-content/themes/jupiter-child/kg_custom.css">
+	<script src="/wp-content/themes/jupiter-child/owlcarousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/jupiter-child/fancybox/jquery.fancybox.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			var owl = jQuery('.kg_testimonials');
+			owl.owlCarousel({
+				margin: 10,
+				nav: true,
+				navText: ["<span><img src='/wp-content/themes/jupiter-child/images/prev.svg'></span>", "<span><img src='/wp-content/themes/jupiter-child/images/next.svg'></span>"],
+				loop: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					1000: {
+						items: 2
+					}
+				}
+			})
+		});
+
+ 		jQuery(document).ready(function() {
+ 			jQuery(".kg_download_whitepaper a").fancybox({
+ 				maxWidth: 404,
+ 				maxHeight: 400,
+ 				fitToView: false,
+ 				width: '70%',
+ 				height: '70%',
+ 				autoSize: false,
+ 				closeClick: false,
+ 				openEffect: 'none',
+ 				closeEffect: 'none',
+ 				wrapCSS: "kg-download-white-paper-"
+ 			});
+ 		});
+
+		jQuery(document).on("click", "#testimonial_btn", function() {
+			var full_name = jQuery('#full_name').val();
+			var word_email = jQuery('#word_email').val();
+			var job_title = jQuery('#job_title').val();
+			var company_name = jQuery('#company_name').val();
+			var work_phone_number = jQuery('#work_phone_number').val();
+			var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+
+			var error_show = 0;
+			if (full_name == '') {
+				jQuery('#full_name_error').show();
+				error_show = 1;
+			} else {
+				jQuery('#full_name_error').hide();
+				error_show = 0;
+			}
+			if (!pattern.test(word_email)) {
+				jQuery('#word_email_error').show();
+				error_show = 1;
+			} else {
+				jQuery('#word_email_error').hide();
+				error_show = 0;
+			}
+
+			if (job_title == '') {
+				jQuery('#job_title_error').show();
+				error_show = 1;
+			} else {
+				jQuery('#job_title_error').hide();
+				error_show = 0;
+			}
+
+			if (company_name == '') {
+				jQuery('#company_name_error').show();
+				error_show = 1;
+			} else {
+				jQuery('#company_name_error').hide();
+				error_show = 0;
+			}
+
+			if (work_phone_number == '') {
+				jQuery('#work_phone_number_error').show();
+				error_show = 1;
+			} else {
+				jQuery('#work_phone_number_error').hide();
+				error_show = 0;
+			}
+
+			if (error_show == 1) {
+				return false;
+			}
+		});
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src=https://www.googletagmanager.com/gtag/js?id=UA-172144943-1></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'UA-172144943-1');
+
+</script>
+</head>
+
+<body class="blog _masterslider _msp_version_3.2.14 wpb-js-composer js-comp-ver-6.0.5 vc_responsive" itemscope="itemscope" itemtype="https://schema.org/WebPage"  data-adminbar="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZL9ZP3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	
+	
+	<!-- Target for scroll anchors to achieve native browser bahaviour + possible enhancements like smooth scrolling -->
+	<div id="top-of-page"></div>
+
+	<div id="mk-boxed-layout">
+
+		<div id="mk-theme-container" >
+
+			 
+    <header data-height='90'
+                data-sticky-height='55'
+                data-responsive-height='90'
+                data-transparent-skin=''
+                data-header-style='1'
+                data-sticky-style='fixed'
+                data-sticky-offset='header' id="mk-header-1" class="mk-header header-style-1 header-align-left  toolbar-false menu-hover-2 sticky-style-fixed mk-background-stretch boxed-header " role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+                    <div class="mk-header-holder">
+                                <div class="mk-header-inner add-header-height">
+
+                    <div class="mk-header-bg "></div>
+
+                    
+                                                <div class="mk-grid header-grid">
+                    
+                            <div class="mk-header-nav-container one-row-style menu-hover-style-2" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" >
+                                <nav class="mk-main-navigation js-main-nav"><ul id="menu-main-menu" class="main-navigation-ul"><li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/">Home</a></li>
+<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/about-invisiron/">About</a></li>
+<li id="menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-cyber-defence-systems/">Products</a>
+<ul style="" class="sub-menu mega_col_3">
+	<li id="menu-item-309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mega_col_3 mk_mega_first"><div class="megamenu-title">For Small Enterprises</div>
+	<ul style="" class="sub-menu mega_col_3">
+		<li id="menu-item-926" class="menu-item menu-item-type-post_type menu-item-object-page"><div class="megamenu-widgets-container"><section id="media_image-3" class="widget widget_media_image"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-1000/"><img width="100" height="100" src="https://invisiron.com/wp-content/uploads/s-1000-thumbnail.png" class="image wp-image-545  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://invisiron.com/wp-content/uploads/s-1000-thumbnail.png 100w, https://invisiron.com/wp-content/uploads/s-1000-thumbnail-300x300.png 300w" sizes="(max-width: 100px) 100vw, 100px" itemprop="image" /></a></section><section id="text-4" class="widget widget_text">			<div class="textwidget"><div id="mk-button-2" class="mk-button-container _ jupiter-donut-relative    jupiter-donut-inline-block jupiter-donut-left ">
+<p>		<a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-1000/" target="_self" class="mk-button js-smooth-scroll mk-button--dimension-outline mk-button--size-small mk-button--corner-rounded _ jupiter-donut-relative jupiter-donut-text-center jupiter-donut-font-weight-700 jupiter-donut-no-backface  letter-spacing-1 jupiter-donut-inline-block" rel="noopener"><span class="mk-button--text">Invisiron® Sentry S-1000</span></a></p>
+</div>
+</div>
+		</section></div></li>
+	</ul>
+</li>
+	<li id="menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mega_col_3"><div class="megamenu-title">For Medium Enterprises</div>
+	<ul style="" class="sub-menu mega_col_3">
+		<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page"><div class="megamenu-widgets-container"><section id="media_image-4" class="widget widget_media_image"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-4000/"><img width="100" height="100" src="https://invisiron.com/wp-content/uploads/s-4000-thumbnail.png" class="image wp-image-546  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://invisiron.com/wp-content/uploads/s-4000-thumbnail.png 100w, https://invisiron.com/wp-content/uploads/s-4000-thumbnail-300x300.png 300w" sizes="(max-width: 100px) 100vw, 100px" itemprop="image" /></a></section><section id="text-5" class="widget widget_text">			<div class="textwidget"><div id="mk-button-3" class="mk-button-container _ jupiter-donut-relative    jupiter-donut-inline-block jupiter-donut-left ">
+<p>		<a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-4000/" target="_self" class="mk-button js-smooth-scroll mk-button--dimension-outline mk-button--size-small mk-button--corner-rounded _ jupiter-donut-relative jupiter-donut-text-center jupiter-donut-font-weight-700 jupiter-donut-no-backface  letter-spacing-1 jupiter-donut-inline-block" rel="noopener"><span class="mk-button--text">Invisiron® Sentry S-4000</span></a></p>
+</div>
+</div>
+		</section></div></li>
+	</ul>
+</li>
+	<li id="menu-item-396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children mega_col_3"><div class="megamenu-title">For Large Enterprises &#038; DCs</div>
+	<ul style="" class="sub-menu mega_col_3">
+		<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page"><div class="megamenu-widgets-container"><section id="media_image-5" class="widget widget_media_image"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-6000/"><img width="100" height="100" src="https://invisiron.com/wp-content/uploads/s-6000-thumbnail.png" class="image wp-image-547  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://invisiron.com/wp-content/uploads/s-6000-thumbnail.png 100w, https://invisiron.com/wp-content/uploads/s-6000-thumbnail-300x300.png 300w" sizes="(max-width: 100px) 100vw, 100px" itemprop="image" /></a></section><section id="text-6" class="widget widget_text">			<div class="textwidget"><div id="mk-button-4" class="mk-button-container _ jupiter-donut-relative    jupiter-donut-inline-block jupiter-donut-left ">
+<p>		<a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-6000/" target="_self" class="mk-button js-smooth-scroll mk-button--dimension-outline mk-button--size-small mk-button--corner-rounded _ jupiter-donut-relative jupiter-donut-text-center jupiter-donut-font-weight-700 jupiter-donut-no-backface  letter-spacing-1 jupiter-donut-inline-block" rel="noopener"><span class="mk-button--text">Invisiron® Sentry S-6000</span></a></p>
+</div>
+</div>
+		</section></div></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-578" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="#">Core Technology</a>
+<ul style="" class="sub-menu ">
+	<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/c3x-core-technology/">C3X&#x2122; Core Technology</a></li>
+	<li id="menu-item-242" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-key-features/">Features</a></li>
+</ul>
+</li>
+<li id="menu-item-944" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/partner/">Partners</a></li>
+<li id="menu-item-945" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="#">RESOURCES</a>
+<ul style="" class="sub-menu ">
+	<li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-940 current_page_item current_page_parent"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/blog/">Blog</a></li>
+	<li id="menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/case-studies/">Case Studies</a></li>
+	<li id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/testimonials/">Testimonials</a></li>
+</ul>
+</li>
+<li id="menu-item-434" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/contact-invisiron/">Contact Invisiron</a></li>
+</ul></nav>                            </div>
+                            
+<div class="mk-nav-responsive-link">
+    <div class="mk-css-icon-menu">
+        <div class="mk-css-icon-menu-line-1"></div>
+        <div class="mk-css-icon-menu-line-2"></div>
+        <div class="mk-css-icon-menu-line-3"></div>
+    </div>
+</div>	<div class=" header-logo fit-logo-img add-header-height logo-is-responsive logo-has-sticky">
+		<a href="https://invisiron.com/" title="Invisiron">
+
+			<img class="mk-desktop-logo dark-logo "
+				title="Next-Generation Cyber Defence Systems"
+				alt="Next-Generation Cyber Defence Systems"
+				src="https://invisiron.com/wp-content/uploads/2020/03/invisiron-logotype-gold.png" />
+
+							<img class="mk-desktop-logo light-logo "
+					title="Next-Generation Cyber Defence Systems"
+					alt="Next-Generation Cyber Defence Systems"
+					src="https://invisiron.com/wp-content/uploads/2020/03/invisiron-logotype-gold.png" />
+			
+							<img class="mk-resposnive-logo "
+					title="Next-Generation Cyber Defence Systems"
+					alt="Next-Generation Cyber Defence Systems"
+					src="https://invisiron.com/wp-content/uploads/2020/03/invisiron-logotype-gold.png" />
+			
+							<img class="mk-sticky-logo "
+					title="Next-Generation Cyber Defence Systems"
+					alt="Next-Generation Cyber Defence Systems"
+					src="https://invisiron.com/wp-content/uploads/image-6.png" />
+					</a>
+	</div>
+
+                                            </div>
+                    
+                    <div class="mk-header-right">
+                                            </div>
+
+                </div>
+                
+<div class="mk-responsive-wrap">
+
+	<nav class="menu-main-menu-container"><ul id="menu-main-menu-1" class="mk-responsive-nav"><li id="responsive-menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/">Home</a></li>
+<li id="responsive-menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/about-invisiron/">About</a></li>
+<li id="responsive-menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-cyber-defence-systems/">Products</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af03329fa9" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+<ul class="sub-menu ">
+	<li id="responsive-menu-item-309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="#">For Small Enterprises</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af0332a34f" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+	<ul class="sub-menu ">
+		<li id="responsive-menu-item-926" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-1000/">Invisiron® Sentry S-1000</a></li>
+	</ul>
+</li>
+	<li id="responsive-menu-item-365" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="#">For Medium Enterprises</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af0332a745" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+	<ul class="sub-menu ">
+		<li id="responsive-menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-4000/">Invisiron® Sentry S-4000</a></li>
+	</ul>
+</li>
+	<li id="responsive-menu-item-396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="#">For Large Enterprises &#038; DCs</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af0332ab39" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+	<ul class="sub-menu ">
+		<li id="responsive-menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-6000/">Invisiron® Sentry S-6000</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="responsive-menu-item-578" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="#">Core Technology</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af0332af39" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+<ul class="sub-menu ">
+	<li id="responsive-menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/c3x-core-technology/">C3X&#x2122; Core Technology</a></li>
+	<li id="responsive-menu-item-242" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/invisiron-key-features/">Features</a></li>
+</ul>
+</li>
+<li id="responsive-menu-item-944" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/partner/">Partners</a></li>
+<li id="responsive-menu-item-945" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children"><a class="menu-item-link js-smooth-scroll"  href="#">RESOURCES</a><span class="mk-nav-arrow mk-nav-sub-closed"><svg  class="mk-svg-icon" data-name="mk-moon-arrow-down" data-cacheid="icon-6a7af0332b402" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 192l-96-96-160 160-160-160-96 96 256 255.999z"/></svg></span>
+<ul class="sub-menu ">
+	<li id="responsive-menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-940 current_page_item current_page_parent"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/blog/">Blog</a></li>
+	<li id="responsive-menu-item-579" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/case-studies/">Case Studies</a></li>
+	<li id="responsive-menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/testimonials/">Testimonials</a></li>
+</ul>
+</li>
+<li id="responsive-menu-item-434" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-link js-smooth-scroll"  href="https://invisiron.com/contact-invisiron/">Contact Invisiron</a></li>
+</ul></nav>
+		
+
+</div>
+        
+            </div>
+        
+        <div class="mk-header-padding-wrapper"></div>
+ 
+                
+    </header>
+<!-- <div id="primary" class="site-content">
+  <div id="content" role="main">
+
+    
+      <h1 class="entry-title">Invisiron Pre-Approved Digital Solution Grant</h1>
+
+      <div class="entry-content">
+
+        <p><b>SINGAPORE, 21 September 2023 </b>– Invisiron is a Pre-Approved Digital Solution ICM Vendor qualified for the IMDA Pre-Approved@SMEsGoDigital Grant.</p>
+<p>With the use of our plug-and-play cyber solutions, SMEs can aim to build strong cyber defence capabilities, with up to 50% government grant!</p>
+<p>Invisiron is your first and last line of Cyber Defence. At the core of Invisiron® is C3X&#x2122;, which features three mission-critical technologies.</p>
+<ol>
+<li>Invisible Stealth Mode</li>
+<li>Autonomous Threat Prevention</li>
+<li>Ultra-Fast In-Line Packet Processing Speed</li>
+</ol>
+<p>The Sentry S-1000 boasts a compact form-factor designed for small networks. This is the perfect solution for Small Size Enterprises.</p>
+<ul>
+<li>Invisiron appliance for 1 or 10 Gbps of bandwidth</li>
+<li>Highly Sophisticated Cyber Threat Intelligence</li>
+</ul>
+<p>Source: Oneberry Technologies Pte Ltd</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Cyber Security Asia 2022</h1>
+
+      <div class="entry-content">
+
+        <p>Invisiron team was excited to connect again in person with cyber experts, our Malaysia clients, partners and prospects at <a href="https://www.linkedin.com/company/cybersecurity-asia/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BVSwMVngHTgak0PFwkXqrDg%3D%3D">Cyber Security Asia</a> KL in August 2022 after 2.5years. Our CTO <a href="https://www.linkedin.com/in/ACoAABJaGfIBy_By0BxC3pAddVfUcWm_W-hLJmA?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BVSwMVngHTgak0PFwkXqrDg%3D%3D">Johan Olstenius (Ph.D.)</a>, a speaker at the conference, shared a very educational presentation ‘Insight into Modern Cyber Attacks’ where he highlighted that successful cyber-attacks continue to grow exponentially despite large funds spent on cyber tools. Hackers are gaining the upper hand using automated tools running targeted campaigns to exploit static or manually supported defence lines. He concluded by making recommendations to improve cyber defence. It was a great event and we hope to see you at our next event in Singapore!</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-1376" src="https://invisiron.com/wp-content/uploads/csa-2022-speaker-dr-johan-scaled-300x200.jpg" alt="" width="300" height="200" srcset="https://invisiron.com/wp-content/uploads/csa-2022-speaker-dr-johan-scaled-300x200.jpg 300w, https://invisiron.com/wp-content/uploads/csa-2022-speaker-dr-johan-scaled-1024x683.jpg 1024w, https://invisiron.com/wp-content/uploads/csa-2022-speaker-dr-johan-768x512.jpg 768w" sizes="(max-width: 300px) 100vw, 300px" /><img decoding="async" class="alignnone wp-image-1380" src="https://invisiron.com/wp-content/uploads/grp-photo-low-res-300x196.jpg" alt="" width="306" height="200" srcset="https://invisiron.com/wp-content/uploads/grp-photo-low-res-300x196.jpg 300w, https://invisiron.com/wp-content/uploads/grp-photo-low-res-1024x669.jpg 1024w, https://invisiron.com/wp-content/uploads/grp-photo-low-res-768x502.jpg 768w" sizes="(max-width: 306px) 100vw, 306px" /><img decoding="async" class="alignnone wp-image-1379" src="https://invisiron.com/wp-content/uploads/grp-photo-2-scaled-300x213.jpg" alt="" width="306" height="217" srcset="https://invisiron.com/wp-content/uploads/grp-photo-2-scaled-300x213.jpg 300w, https://invisiron.com/wp-content/uploads/grp-photo-2-scaled-1024x727.jpg 1024w, https://invisiron.com/wp-content/uploads/grp-photo-2-768x545.jpg 768w" sizes="(max-width: 306px) 100vw, 306px" /><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-1381" src="https://invisiron.com/wp-content/uploads/sg-team-scaled-300x217.jpg" alt="" width="300" height="217" srcset="https://invisiron.com/wp-content/uploads/sg-team-scaled-300x217.jpg 300w, https://invisiron.com/wp-content/uploads/sg-team-scaled-1024x741.jpg 1024w, https://invisiron.com/wp-content/uploads/sg-team-768x556.jpg 768w" sizes="(max-width: 300px) 100vw, 300px" /><img loading="lazy" decoding="async" class="alignnone wp-image-1377" src="https://invisiron.com/wp-content/uploads/csa-2022-speaker-johan-300x243.jpeg" alt="" width="335" height="272" srcset="https://invisiron.com/wp-content/uploads/csa-2022-speaker-johan-300x243.jpeg 300w, https://invisiron.com/wp-content/uploads/csa-2022-speaker-johan-1024x830.jpeg 1024w, https://invisiron.com/wp-content/uploads/csa-2022-speaker-johan-768x623.jpeg 768w, https://invisiron.com/wp-content/uploads/csa-2022-speaker-johan.jpeg 1200w" sizes="(max-width: 335px) 100vw, 335px" /><img loading="lazy" decoding="async" class="alignnone wp-image-1378" src="https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation-300x300.jpeg" alt="" width="273" height="272" srcset="https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation-300x300.jpeg 300w, https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation-1024x1021.jpeg 1024w, https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation-150x150.jpeg 150w, https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation-768x766.jpeg 768w, https://invisiron.com/wp-content/uploads/csa-2022-token-of-appreciation.jpeg 1101w" sizes="(max-width: 273px) 100vw, 273px" /></p>
+
+      </div>
+
+    
+      <h1 class="entry-title">5 CyberSecurity Trends In 2022</h1>
+
+      <div class="entry-content">
+
+        <p>2021 has been a whirlwind in the cybersecurity space with record ransomware attacks during the year. It seems like last year was just the start of cyberthreats with greater uncertainties looming over us this year. Here are 5 cybersecurity trends companies should take note for 2022:</p>
+<ol>
+<li>Greater number of ransomware threats targeting more small and medium-sized businesses (SMBs) for digital extortion</li>
+<li>Social engineering and supply chain will have an increasing impact on cybersecurity</li>
+<li>The vulnerability of IoT will increase due to the rise in connected online devices</li>
+<li>There is a need for a greater coordination between companies and the cybersecurity industry to protect against cyberattacks</li>
+<li>The government’s growing interest and influence will lead to a greater emphasis on cybersecurity</li>
+</ol>
+<p>With these upcoming threats in the new year, companies can implement more proactive cyber defence solutions to automatically detect them without being visible by hackers.</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Cyber Defence – It’s time to act now, Cyber Security and the Pandemic, Heightened Cyber Threats in the Legal Sector</h1>
+
+      <div class="entry-content">
+
+        <p>Since the start of the COVID-19 pandemic, remote work and distancing measures has led law firms to accelerate digitalization in their legal practices. With a surge in digital footprints created by the legal sector, hackers are increasingly preying on unsuspecting law firms. This is evident in American Bar Association’s <a href="https://www.americanbar.org/groups/law_practice/publications/techreport/2020/cybersecurity/">2020 Legal Technology Survey Report</a>, whereby the number of firms that experienced a cyber-attack increased from 26% in 2019, to 29% in 2020.</p>
+<h2>Why are law firms targeted by hackers?</h2>
+<h3>1) Vast amounts of valuable documents</h3>
+<p>Lawyers have access to confidential client information, based on their attorney-client privilege. The vast information shared includes invaluable documents such as descriptions of trade secrets, business strategies and intellectual property, which are viewed as high value targets for hackers.</p>
+<h3>2) Lack of proper cyber security measures in place</h3>
+<p>The fast-paced working environment requires law firms to channel most of their resources towards meeting their clients’ needs efficiently. Thus, having proper cyber security systems in place are often not prioritized, and minimal resources are dedicated to cyber security, leading to compromised IT networks.</p>
+<h2>Recent high profile cyber-attacks in the legal sphere</h2>
+<p>Previously, in May 2020, Grub man Shire Meiselas &amp; Sacks Law firm, a prestigious law firm faced a ransomware attack that demanded USD$42 million. Sensitive data belonging to A list celebrities and prominent figures like Lady Gaga, Donald Trump and other prominent figures were leaked. These leaked files include contracts, telephone numbers and non-disclosure agreements amongst other confidential files.</p>
+<p>Recently, in February 2021, Campbell Conroy &amp; O’Neil, P.C, another large law firm with established corporate clients like Ford, Boeing and Coca-Cola, was also hit with a ransomware attack. Sensitive information including names, financial account information, social security numbers, and payment card information were stolen from their network.</p>
+<h2>What are the common types of cyber-attacks carried out on law firms?</h2>
+<p>Cyber-attacks come in many forms as hackers would often diversify their methods to target organisations. The various types of cyber-attacks include phishing attacks, data breaches, ransomware, supply chain compromise, distributed denial-of service (DDoS) attacks, SQL injection attacks and other sophisticated attacks. In view of the vulnerability of law firms, phishing attacks, ransomware attacks and supply chain compromise are popular attacks carried out by hackers to financially exploit law firms alongside other ulterior motives.</p>
+<h3>1) Phishing attacks</h3>
+<p>Phishing attacks normally involve impersonation and identity theft emails to trick lawyers into giving confidential information. These emails can represent urgent requests or instructions from authority personnel. With the appropriate tone and content, recipients are likely to respond to them due to the implied level of trust and the tendency to comply with authority out of fear at times. Phishing attacks are highly successful as law firms have lost over USD 790,000 in 2019 as <a href="https://www.legalfutures.co.uk/associate-news/bogus-law-firms-and-identity-theft">reported by Solicitors Regulation Authority</a> (“SRA”).</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-1284" src="https://invisiron.kgkrunch.com/wp-content/uploads/blog-law-society-img1-300x258.png" alt="" width="500" height="429" /><br />
+<em>An example of a phishing email impersonating a law firm for an urgent request.</em><br />
+Source: <a href="https://www.irangers.com/how-to-recognize-phishing-emails/">iRangers</a></p>
+<h3>2) Ransomware</h3>
+<p>Ransomware is a malware that restricts access to a law firm’s computer and data systems until the ransom is paid. Payments may be demanded in the form of cryptocurrencies like Bitcoin to avoid tracing and firms are not guaranteed full recovery of their data upon payment. To impose pressure on firms, two-pronged ransomware attacks are often being carried out whereby the data is being held and threatened to be leaked. Ransomware attacks are prevalent as 1 in 3 law firms were targeted based on <a href="https://blog.capterra.com/law-firm-ransomware/#methodology">Capterra’s 2021 Legal Management Survey</a>.</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-1285" src="https://invisiron.kgkrunch.com/wp-content/uploads/blog-law-society-img2.png" alt="" width="500" height="331" /><br />
+<em>An example of a ransomware attack utilising CTB-Locker, a ransomware variant that is part of the crypto-ransomware family.<br />
+</em>Source<em>: </em><a href="https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/ransomware-what-it-is-and-how-you-can-protect-yourself">Trend Micro</a><em><br />
+</em></p>
+<h3>3) Supply chain compromise</h3>
+<p>A law firm’s supply chain mainly utilizes third-party data stores and software providers to facilitate online legal services. Hackers would target the lack of security measures in third party suppliers that deal with commercially sensitive data like client information. Subsequently, when financial transactions are planned to take place through these third-party vendors, hackers would intercept the transactions when money is about to be transferred.</p>
+<p><img loading="lazy" decoding="async" class="alignnone wp-image-1286" src="https://invisiron.kgkrunch.com/wp-content/uploads/blog-law-society-img3.png" alt="" width="500" height="417" /><br />
+<em>An illustration of the process of a supply chain attack on law firms.</em><br />
+Source: <a href="https://www.techtarget.com/searchsecurity/definition/supply-chain-attack">TechTarget</a></p>
+<h2>The damage of cyber-attacks on law firms</h2>
+<p>Cyber-attacks are detrimental to organisations as it is often accompanied by a slew of irreversible negative repercussions. Common repercussions would include financial losses, productivity losses, reputation damage, legal liabilities and business continuity problems. In the legal industry, reputation damage, financial losses and business continuity problems are more prominent issues faced by law firms, in the aftermath of a cyber-attack.</p>
+<h3>1) Reputation loss</h3>
+<p>Law firms mainly rely on word of mouth, prestige, and reputation to gain the trust of clients. When there is a loss of personal and confidential information caused by cyber-attacks, the trust and relationships forged with existing and potential clients would be destroyed. Clients and partners that have entrusted law firms with their business and data would be infuriated and attempts to persuade them to return or stay would likely be an insurmountable task, due to a tarnished image and reputation.</p>
+<h3>2) Financial Loss</h3>
+<p>Cyber-attacks or data breaches would incur hefty financial costs attributed to different areas</p>
+<ul>
+<li>Cost of recovery: Engaging IT personnel and external contractors to conduct in-depth recovery operations includes costly additional man-hours.</li>
+<li>Cost of lost productivity: Downtime from cyber attacks leads to measurable financial losses such as the loss of billable hours and other value-added activities.</li>
+<li>Legal and PR costs: Thorough legal and PR efforts are required to account to shareholders and prepare for legal or regulatory lawsuits.</li>
+</ul>
+<h3>3) Business Continuity problems</h3>
+<p>The extensive impact from not being to conduct business with clients and the steep costs accumulated can threaten a firm’s business continuity. This is especially alarming for firms that rely heavily on online applications or platforms, to conduct legal services and connect with their clients. A cyber-attack alone would disrupt and halt such activities, which can be enough to put these firms out of business.</p>
+<h2>Cyber Security Measures in the Legal Sphere</h2>
+<p>Referencing Section 24 of the Personal Data Protection Act, organizations are required to protect personal data in their possession, through implementing reasonable security arrangements to prevent unauthorized malicious acts and data losses. Hence, law firms and lawyers can consider adopting the following cyber security measures to protect their clients’ data from hackers.</p>
+<h3>How Lawyers can play their part in Cyber Security</h3>
+<ul>
+<li>Ensure that passwords and login credentials to client information are complex and changed routinely</li>
+<li>Restrict access to clients’ data by only allowing relevant personnel to access them for a specific job function, to prevent mismanagement of data that has costly ramifications</li>
+<li>Avoid using public Wi-Fi without a virtual private network (VPN) when sharing data, as hackers can access these data from the exposed IP addresses of devices upon connecting to open networks</li>
+<li>Backup data regularly by following the 3-2-1 backup rule. 3 copies of the data should be stored on 2 different types of media such as a local and external hard drive, and store 1 copy in an off-site location such as a cloud storage. This reduces the impact of a single point of failure caused by cyber-attacks.</li>
+</ul>
+<h2>Recommended Cyber Security Measures for Law firms</h2>
+<h3>1) Enhance existing cyber defence measures with proactive cyber defence solutions</h3>
+<p>Proactive cyber defence solutions prevent threats with automated threat detection and mitigation before they enter a firm’s network on a 24/7 basis.<br />
+Since clean-up operations from attacks are carried out outside of the firm’s network, business will be as usual for law firms due to the absence of downtime for recovery.</p>
+<p>Firms without internal IT teams can consider engaging professional IT providers to deploy the sophisticated proactive cyber defence solutions. This transition from traditional reactive to proactive cyber defence measures will ultimately allow firms to save time, manpower, and costs on monitoring, detecting, and responding to cyber threats.</p>
+<h3>2) Deploy plug-and-play scalable solutions that cater to firms of all sizes</h3>
+<p>Plug-and-play scalable solutions provide cost-savings and convenience to firms looking to protect their business. Such solutions are easy to install, and they do not require firms to make any changes to their existing IT infrastructure networks while they upgrade their cyber security measures at any point, including the business expansion stage.</p>
+<p>These flexible and affordable cyber defence solutions are readily available in the market. Firms can in turn select the appropriate cyber defence solutions that are in accordance with their needs and requirements.</p>
+<h3>3) Employ the use of automatic update cyber defence solutions</h3>
+<p>With hackers continuously coming up with new ways to infiltrate systems, it is an uphill task for law firms to juggle between serving their clients and ensuring that their existing cyber security measures are effective in dealing with the complex nature of modern cyber threats.</p>
+<p>As such, law firms can seek out external cyber defence solutions providers whose expertise is in developing up-to-date solutions that incorporate the best industry practices and latest cyber security technologies. To evaluate the credibility and effectiveness of these solutions offered, firms can look at solutions that are constantly updated automatically, based off intel provided from a myriad of globally recognised cyber security sources. Law firms should also consider solutions that are certified with internationally recognised cyber security certifications.</p>
+<h2>Conclusion</h2>
+<p>The heightened threat of cyber-attacks in today’s cyber security landscape makes it crucial for lawyers and law firms to implement proper and effective cyber security measures that functions as the first and last line of cyber defense. With the provision of comprehensive state-of-the-art cyber defense solutions offered by external IT vendors to all law firms, and a uniformed effort by lawyers to adopt good cyber security habits, it collectively prepares the legal industry to better defend against the ever-imminent threat of cyber-attacks.</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Breaking News: New Malware Threat Squirrelwaffle Discovered</h1>
+
+      <div class="entry-content">
+
+        <p>Malware threats are ever-evolving and that includes the recent SquirrelWaffle which utlises stolen reply-chain email campaigns to plant phishing emails with malicious attachments mimicking official Microsoft Excel and Word documents.</p>
+<p>These attachments contain VBS macros that will trigger the malware within to commence data stealing actions upon enabling them. Recipients are easily deceived as these emails includes the usage of popular platforms that requires macro enabling.</p>
+<p>With the prevalence of notorious malware campaigns targeting organisations, it is critical for organizations to implement proactive cyber defence solutions against malware attacks, whilst staying undetectable by hackers.</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Third-party software bug exploited by hackers</h1>
+
+      <div class="entry-content">
+
+        <p>The new norm of employees working from home has created a huge demand for third-party software for work purposes.</p>
+<p>Hackers have seized this opportunity and uncovered new ways to exploit bugs in these third-party software to retrieve sensitive information. In one incident, the response code sent after the free trial period ended was intercepted, giving hackers access to siphon data from devices linked to corporate networks.</p>
+<p>Not every employee possesses the ability to exercise judgement on safe external applications to be downloaded. Companies should invest in proactive cyber security solutions that can automatically detect and mitigate hidden cyber threats in downloaded software. Reinforce your company’s cyber security measures today with Invisiron.</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Surge in Complex Cyber Attacks Targeted at Small to Medium Enterprises</h1>
+
+      <div class="entry-content">
+
+        <p>SMEs are becoming more frequently targeted by hackers in cyber attacks, especially in sectors that deal with sensitive data or personal information, such as professional service and healthcare providers. The impact of a data breach from an attack may cost you more than you could imagine.</p>
+<p>Act quickly to minimise any damages with Invisiron’s plug-and-play platform, catered to businesses of all sizes with no redesign to existing IT infrastructure. Stay protected by keeping your business invisible to hackers, while proactively detecting and mitigating the threats in your network.</p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Upgrade Your Company&#8217;s Cyber Security Networks Today</h1>
+
+      <div class="entry-content">
+
+        <p>The Asia-Pacific network security market is experiencing a huge growth, whereby the market is estimated to hit $7.32 BILLION by 2025, based on an analysis conducted by an American business consulting firm, as reported by Cyber Magazine. (TAG CYBERMAGAZINE). This growth is attributed to the urgent adoption of remote work due to the pandemic, leading to the need for upgraded cyber security to protect remote employees.</p>
+<p>Complex cyber attacks on critical infrastructure and government organisations are also increasingly prevalent, leading to further investments in cybersecurity technologies to bolster threat detection and response capabilities of companies.</p>
+<p>Join fellow companies in upgrading their cyber security systems, by clicking <a href="https://invisiron.com/invisiron-cyber-defence-systems/">HERE</a> to learn more about how Invisiron’s Cyber Defence Solutions can fortify your company’s network. </p>
+
+      </div>
+
+    
+      <h1 class="entry-title">7 Most Prominent Cyberattacks in ASEAN Countries</h1>
+
+      <div class="entry-content">
+
+        <p>The acceleration of digital transformation caused by COVID-19, sparked a huge surge in the number of cyber attacks in the ASEAN region in 2020, evident from Interpol’s ASEAN Cyberthreat Assessment 2021 report.</p>
+<p>Based on the current cyberthreat landscape, the financial repercussions caused by cyber attacks is projected to be at a whopping amount of USD 10.5 trillion annually by 2025! Amongst the cyber attack trends identified, Business E-mail Compromise, Ransomware and Crimeware-as-a-Service were more prominent attacks targeted at companies.</p>
+<p>Learn <a href="https://www.interpol.int/content/download/16106/file/ASEAN%20Cyberthreat%20Assessment%202021%20-%20final.pdf">MORE</a> about the different kinds of cyber attacks that have plagued the ASEAN region. </p>
+
+      </div>
+
+    
+      <h1 class="entry-title">Cybersecurity Tips to follow when working from home</h1>
+
+      <div class="entry-content">
+
+        <p>As COVID-19 drags on, remote work has been the default standard for most companies. To prevent employees from falling victim to cyber threats while working at home, here are some useful cyber security tips that employees and companies can adopt.</p>
+<ul>
+<li>Encrypt sensitive information when communicating with colleagues</li>
+<li>Backup important files in a cloud storage regularly</li>
+<li>Educate employees on how to spot and handle phishing attacks</li>
+<li>Utilise a VPN that is patched and up-to-date to access company information systems</li>
+</ul>
+<p>&#x2b50;&#xfe0f;Most importantly, having a strong front line defence is crucial to better deal with modern cyber threats. Companies can implement Invisiron’s Cyber Defence solutions alongside existing firewalls in their networks, to protect their employees’ work devices and cultivate a safer remote working environment.</p>
+<p>Click <a href="https://invisiron.com/invisiron-cyber-defence-systems/">HERE</a> to know more about Invisiron’s Cyber Defence Solutions.</p>
+
+      </div>
+
+    
+  </div>
+</div>#primary -->
+<div class="mk-grid">
+    <div class="kg-blog-contentarea">
+	<div class="blog-top-title">
+     <h2>Blog &amp; Media Events</h2>
+    </div>
+	<div class="blog-selector">
+    <div class="kg-inner-wrap">
+        <ul>
+		<li class="blog-warp all"><a href="https://invisiron.com/blog/">All</a></li>
+		<li class="blog-warp articles"><a href="https://invisiron.com/category/articles/">Articles</a></li><li class="blog-warp events"><a href="https://invisiron.com/category/events/">Events</a></li><li class="blog-warp news"><a href="https://invisiron.com/category/news/">News</a></li></ul>
+    </div>
+</div>
+  <div class="kg_blog_row">    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/invisiron-pre-approved-digital-solution-grant/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/invisiron.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>News</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/invisiron-pre-approved-digital-solution-grant/">Invisiron Pre-Approved Digital Solution Grant</a></h4>
+          <p class="card-text">SINGAPORE, 21 September 2023 – Invisiron is a Pre-Approved Digital Solution ICM Vendor qualified for the IMDA Pre-Approved@SMEsGoDigital Grant. With the</p>
+          <p class="icon-date kg-date">25th Sep 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/cyber-security-asia-2022/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/csa-banner-speaker.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>Events</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/cyber-security-asia-2022/">Cyber Security Asia 2022</a></h4>
+          <p class="card-text">Invisiron team was excited to connect again in person with cyber experts, our Malaysia clients, partners and prospects at Cyber</p>
+          <p class="icon-date kg-date">16th Aug 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/5-cybersecurity-trends-in-2022/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-5-cybersecurity.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>Articles</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/5-cybersecurity-trends-in-2022/">5 CyberSecurity Trends In 2022</a></h4>
+          <p class="card-text">2021 has been a whirlwind in the cybersecurity space with record ransomware attacks during the year. It seems like last</p>
+          <p class="icon-date kg-date">20th Jan 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/cyber-defence-its-time-to-act-now-cyber-security-and-the-pandemic-heightened-cyber-threats-in-the-legal-sector/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-cyber-defence.jpg" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>Articles</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/cyber-defence-its-time-to-act-now-cyber-security-and-the-pandemic-heightened-cyber-threats-in-the-legal-sector/">Cyber Defence – It’s time to act now, Cyber Security and the Pandemic, Heightened Cyber Threats in the Legal Sector</a></h4>
+          <p class="card-text">Since the start of the COVID-19 pandemic, remote work and distancing measures has led law firms to accelerate digitalization in</p>
+          <p class="icon-date kg-date">9th Jan 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/breaking-news-new-malware-threat-squirrelwaffle-discovered/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-new-malware-threat.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>News</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/breaking-news-new-malware-threat-squirrelwaffle-discovered/">Breaking News: New Malware Threat Squirrelwaffle Discovered</a></h4>
+          <p class="card-text">Malware threats are ever-evolving and that includes the recent SquirrelWaffle which utlises stolen reply-chain email campaigns to plant phishing emails</p>
+          <p class="icon-date kg-date">16th Dec 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/third-party-software-bug-exploited-by-hackers/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/third-party-software-1.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>News</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/third-party-software-bug-exploited-by-hackers/">Third-party software bug exploited by hackers</a></h4>
+          <p class="card-text">The new norm of employees working from home has created a huge demand for third-party software for work purposes. Hackers</p>
+          <p class="icon-date kg-date">2nd Dec 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/surge-in-complex-cyber-attacks-targeted-at-small-to-medium-enterprises/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-surge-in-complex.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>Articles</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/surge-in-complex-cyber-attacks-targeted-at-small-to-medium-enterprises/">Surge in Complex Cyber Attacks Targeted at Small to Medium Enterprises</a></h4>
+          <p class="card-text">SMEs are becoming more frequently targeted by hackers in cyber attacks, especially in sectors that deal with sensitive data or</p>
+          <p class="icon-date kg-date">11th Nov 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/upgrade-your-companys-cyber-security-networks-today/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-upgrade-your-company.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>Articles</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/upgrade-your-companys-cyber-security-networks-today/">Upgrade Your Company&#8217;s Cyber Security Networks Today</a></h4>
+          <p class="card-text">The Asia-Pacific network security market is experiencing a huge growth, whereby the market is estimated to hit $7.32 BILLION by</p>
+          <p class="icon-date kg-date">21st Oct 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kg-col-lg-4  kg-mb-4">
+      <div class="card">
+        <a href="https://invisiron.com/7-most-prominent-cyberattacks-in-asean-countries/" class="simg">
+          <figure>
+                        <img class="card-img-top" src="https://invisiron.com/wp-content/uploads/blog-7-most-prominent-cyber-attacks.png" alt="Card image cap">
+          </figure>
+        </a>
+        <div class="card-body">
+          <p class="card-top-label"><span>News</span></p>
+          <h4 class="card-title"><a href="https://invisiron.com/7-most-prominent-cyberattacks-in-asean-countries/">7 Most Prominent Cyberattacks in ASEAN Countries</a></h4>
+          <p class="card-text">The acceleration of digital transformation caused by COVID-19, sparked a huge surge in the number of cyber attacks in the</p>
+          <p class="icon-date kg-date">14th Oct 2021</p>
+        </div>
+      </div>
+    </div>
+
+</div></div></div><div class="kg-inversion-pagination-blog"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://invisiron.com/blog/page/2/">2</a>
+<a class="next page-numbers" href="https://invisiron.com/blog/page/2/"><img src="/wp-content/uploads/right_angle.svg"></a></div>
+<section id="mk-footer-unfold-spacer"></section>
+
+<section id="mk-footer" class="" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+			<div class="footer-wrapper fullwidth-footer">
+			<div class="mk-padding-wrapper">
+						<div class="mk-col-1-6 footer_widget_1"><section id="media_image-9" class="widget widget_media_image"><img width="134" height="88" src="https://invisiron.com/wp-content/uploads/invisiron-tagline-cyber-defence-fortified-1.png" class="image wp-image-947  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" loading="lazy" itemprop="image" /></section></div>
+			<div class="mk-col-1-6 footer_widget_2"><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="widgettitle">Sign Up For Updates</div><div class="textwidget custom-html-widget">Sign up in seconds to receive the latest promotions & news.&nbsp;     </div></section><section id="gform_widget-2" class="widget gform_widget"><link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.17' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.17' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.17' type='text/css'  />
+<link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.17' type='text/css'  />
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.17" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"Singapore Dollar","symbol_left":"$","symbol_right":"","symbol_padding":" ","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/invisiron.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/invisiron.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.17" id="gform_gravityforms-js"></script>
+
+                <div class='gf_browser_unknown gform_wrapper' id='gform_wrapper_6' ><div id='gf_6' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_6' id='gform_6'  action='/blog/#gf_6'>
+                        <div class='gform_body'><ul id='gform_fields_6' class='gform_fields top_label form_sublabel_below description_below'><li id='field_6_1'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_6_1' ></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_6_1' type='text' value='' class='large'   placeholder='*Enter Email'  aria-invalid="false" />
+                        </div></li><li id='field_6_2'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_6_2' >Name</label><div class='ginput_container'><input name='input_2' id='input_6_2' type='text' value='' /></div><div class='gfield_description' id='gfield_description__2'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_6' class='gform_button button' value='Subscribe'  onclick='if(window["gf_submitting_6"]){return false;}  window["gf_submitting_6"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_6"]){return false;} window["gf_submitting_6"]=true;  jQuery("#gform_6").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=6&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_6' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='6' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_6' value='WyJbXSIsIjBmZGQ2ODliOWY1MzVmMGQxODkxMTI4ZDIyZTg0YzczIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_6' id='gform_target_page_number_6' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_6' id='gform_source_page_number_6' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_6' id='gform_ajax_frame_6'>This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 6, 'https://invisiron.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_6').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_6');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_6').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_6').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_6').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_6').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_6').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_6').val();gformInitSpinner( 6, 'https://invisiron.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [6, current_page]);window['gf_submitting_6'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_6').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_6').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [6]);window['gf_submitting_6'] = false;}, 50);}else{jQuery('#gform_6').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [6, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 6) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [6, 1]) } ); </script></section><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><section id="social-2" class="widget widget_social_networks">
+	<div id="social-617ceca3e46d3" class="align-left">
+		<a href="https://www.youtube.com/channel/UCcwBqx3MqkvCBiOtf531_BA" rel="nofollow noopener" target="_blank">
+			<img src="https://invisiron.com/wp-content/uploads/youtube-icon-svg-1.png" alt="Follow Us on " title="Follow Us on ">
+		</a>
+		<a href="https://sg.linkedin.com/company/invisiron" rel="nofollow noopener" target="_blank">
+			<img src="https://invisiron.com/wp-content/uploads/linkedin-icon-svg-1.png" alt="Follow Us on " title="Follow Us on ">
+		</a>
+		<a href="https://wa.me/86993168" rel="nofollow noopener" target="_blank">
+			<img class="whatsapp_1" src="https://invisiron.com/wp-content/uploads/vector-4.png" alt="Follow Us on " title="Follow Us on ">
+			<img class="whatsapp_2" src="https://invisiron.com/wp-content/uploads/vector-1-2.png" alt="Follow Us on " title="Follow Us on ">
+			<img class="whatsapp_phone" src="https://invisiron.com/wp-content/uploads/phone-icon-svg.png" alt="Follow Us on " title="Follow Us on ">
+		</a>
+	</div>
+</section></div></section></div>
+			<div class="mk-col-1-6 footer_widget_3"><section id="nav_menu-2" class="widget widget_nav_menu"><div class="widgettitle">Quick Links</div>
+<div class="menu-footer-menu1-container"><ul id="menu-footer-menu1" class="menu">
+<li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-953"><a href="https://invisiron.com/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Home</a></li>
+<li id="menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-954"><a href="https://invisiron.com/about-invisiron/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>About</a></li>
+<li id="menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-955"><a href="https://invisiron.com/case-studies/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Case Studies</a></li>
+<li id="menu-item-957" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-957"><a href="https://invisiron.com/testimonials/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Testimonials</a></li>
+<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://invisiron.com/contact-invisiron/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Contact Us</a></li>
+<li id="menu-item-1436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1436"><a href="https://invisiron.com/privacy-and-gdpr-policy/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af0333471e" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Privacy and GDPR Policy</a></li>
+</ul></div></section></div>
+			<div class="mk-col-1-6 footer_widget_4"><section id="nav_menu-6" class="widget widget_nav_menu"><div class="widgettitle">CORE TECHNOLOGY</div>
+<div class="menu-footer-menu2-container"><ul id="menu-footer-menu2" class="menu">
+<li id="menu-item-958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-958"><a href="https://invisiron.com/c3x-core-technology/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af033359ce" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>C3X™ Core Technology</a></li>
+<li id="menu-item-959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-959"><a href="https://invisiron.com/invisiron-key-features/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af033359ce" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Features</a></li>
+</ul></div></section></div>
+			<div class="mk-col-1-6 footer_widget_5"><section id="nav_menu-4" class="widget widget_nav_menu"><div class="widgettitle">Our Products</div>
+<div class="menu-footer-menu3-container"><ul id="menu-footer-menu3" class="menu">
+<li id="menu-item-960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-1000/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af03336c6f" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Invisiron® Sentry S-1000</a></li>
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-4000/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af03336c6f" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Invisiron® Sentry S-4000</a></li>
+<li id="menu-item-962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-962"><a href="https://invisiron.com/invisiron-cyber-defence-systems/invisiron-sentry-s-6000/"><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af03336c6f" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>Invisiron® Sentry S-6000</a></li>
+</ul></div></section></div>
+			<div class="mk-col-1-6 footer_widget_6"><section id="nav_menu-5" class="widget widget_nav_menu"><div class="widgettitle">Contact Us</div>
+<div class="menu-footer-menu4-container"><ul id="menu-footer-menu4" class="menu">
+<li id="menu-item-963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-963"><a><svg class="mk-svg-icon" data-name="mk-icon-angle-right" data-cacheid="icon-6a7af03337b1b" style=" height:14px; width: 5px; " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 1792"><path d="M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>150 Sims Drive<br> #06-00 Oneberry<br> Singapore 387381</a></li>
+</ul></div></section></div>
+					<div class="clearboth"></div>
+			</div>
+		</div>
+		
+<div id="sub-footer">
+	<div class=" fullwidth-footer">
+		
+		<span class="mk-footer-copyright">&copy;2022 Invisiron Pte Ltd. All rights reserved.</span>
+		<span class="kg_hidden_txt"><a href="https://eastsidemafia.com/seo-agency/">Web Development and Singapore based SEO Services by East Side Mafia Singapore</a></span>
+			</div>
+	<div class="clearboth"></div>
+</div>
+</section>
+</div>
+</div>
+<!-- <div class="kg_whatsapp_floating_btn">
+	<a href="https://wa.me/86993168" class="kg-whatsapp" target="_blank">
+		<div class="contact_icon">
+			<img src="/wp-content/uploads/whatsapp.svg">
+		</div>
+	</a>
+</div> -->
+<div class="bottom-corner-btns js-bottom-corner-btns">
+	
+<a href="#top-of-page" class="mk-go-top  js-smooth-scroll js-bottom-corner-btn js-bottom-corner-btn--back">
+	<svg  class="mk-svg-icon" data-name="mk-icon-chevron-up" data-cacheid="icon-6a7af0333832b" style=" height:16px; width: 16px; "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19l-531-531-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"/></svg></a>
+</div>
+
+
+
+<div id="kg_loader_2">
+	<img src="https://invisiron.com/wp-content/uploads/4d7260d218aad66fd0d8aa84a6c2bbd7.gif">
+</div>
+<style type='text/css'></style><style id="mk-shortcode-static-styles" type="text/css">#mk-button-2 { margin-bottom:15px; margin-top:0px; margin-right:15px; } #mk-button-2 .mk-button { display:inline-block; max-width:100%; } #mk-button-2 .mk-button { border-color:#dda63a; color:#dd9c1a!important; } #mk-button-2 .mk-button .mk-svg-icon { fill:#dd9c1a!important; } #mk-button-2 .mk-button:hover { background-color:#dda63a; color:#000000!important; } #mk-button-2 .mk-button:hover .mk-svg-icon { fill:#000000!important; } #mk-button-3 { margin-bottom:15px; margin-top:0px; margin-right:15px; } #mk-button-3 .mk-button { display:inline-block; max-width:100%; } #mk-button-3 .mk-button { border-color:#dda63a; color:#dd9c1a!important; } #mk-button-3 .mk-button .mk-svg-icon { fill:#dd9c1a!important; } #mk-button-3 .mk-button:hover { background-color:#dda63a; color:#000000!important; } #mk-button-3 .mk-button:hover .mk-svg-icon { fill:#000000!important; } #mk-button-4 { margin-bottom:15px; margin-top:0px; margin-right:15px; } #mk-button-4 .mk-button { display:inline-block; max-width:100%; } #mk-button-4 .mk-button { border-color:#dda63a; color:#dd9c1a!important; } #mk-button-4 .mk-button .mk-svg-icon { fill:#dd9c1a!important; } #mk-button-4 .mk-button:hover { background-color:#dda63a; color:#000000!important; } #mk-button-4 .mk-button:hover .mk-svg-icon { fill:#000000!important; }</style><script type="text/javascript">
+    php = {
+        hasAdminbar: false,
+        json: (null != null) ? null : "",
+        jsPath: 'https://invisiron.com/wp-content/themes/jupiter/assets/js'
+      };
+    </script><link rel='stylesheet'  href='https://invisiron.com/wp-content/plugins/js_composer_theme/assets/css/js_composer.min.css?ver=6.0.5' type='text/css'  />
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/ob-admin\/|\/wp-admin\/|\/logout\/|\/ob-admin\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/invisiron.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/themes/jupiter/assets/js/min/full-scripts.6.4.1.js?ver=1565953676" id="theme-scripts-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/themes/jupiter/header-builder/includes/assets/js/mkhb-render.js?ver=6.4.1" id="mkhb-render-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/themes/jupiter/header-builder/includes/assets/js/mkhb-column.js?ver=6.4.1" id="mkhb-column-js"></script>
+<script type="text/javascript" id="jupiter-donut-shortcodes-js-extra">
+/* <![CDATA[ */
+var jupiterDonutVars = {"themeDir":"https:\/\/invisiron.com\/wp-content\/themes\/jupiter","assetsUrl":"https:\/\/invisiron.com\/wp-content\/plugins\/jupiter-donut\/assets","gridWidth":"1140","ajaxUrl":"https:\/\/invisiron.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/jupiter-donut/assets/js/shortcodes-scripts.min.js?ver=1.0.2" id="jupiter-donut-shortcodes-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/js_composer_theme/assets/js/dist/js_composer_front.min.js?ver=6.0.5" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="https://invisiron.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.4.17" id="gform_placeholder-js"></script>
+<script type="text/javascript">	window.get = {};	window.get.captcha = function(enteredCaptcha) {
+                  return jQuery.get(ajaxurl, { action : "mk_validate_captcha_input", captcha: enteredCaptcha });
+              	};</script>
+<!-- <script src="/wp-content/themes/jupiter-child/js/kg_custom.js" ></script>-->
+<script>
+	var spinner = jQuery('#kg_loader_2');
+	spinner.hide();
+	jQuery('#testimonial_btn').click(function() {
+		spinner.show();
+		var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+		var kg_email_check = jQuery('#word_email').val();
+		if (pattern.test(kg_email_check)) {
+			var post_data = {
+				action: 'kg_white_paper_form',
+				kg_fullname: jQuery('#full_name').val(),
+				kg_email: jQuery('#word_email').val(),
+				kg_job_title: jQuery('#job_title').val(),
+				kg_company_name: jQuery('#company_name').val(),
+				kg_telephone: jQuery('#work_phone_number').val()
+
+			}
+			jQuery.ajax({
+				type: 'POST',
+				url: "https://invisiron.com/wp-admin/admin-ajax.php",
+				data: post_data,
+				success: function(result) {
+					if (result === "no_errors") {
+						spinner.hide();
+						jQuery('.fancybox-overlay.fancybox-overlay-fixed').css("display", "none");
+						var kg_pdf = "https://invisiron.com/wp-content/uploads/invisiron-fortify-your-network-defence.pdf"
+						window.open(kg_pdf, '_blank');
+					} else {
+						spinner.hide();
+						//alert('Please Fill Form Details.');
+					}
+				}
+			});
+		}
+	});
+</script>
+<script>
+	var maxHeight = 0;
+	jQuery('.kg-col-lg-4').find('.card-title').each(function(index) {
+		if (jQuery(this).height() > maxHeight)
+			maxHeight = jQuery(this).height();
+	});
+	jQuery('.kg-col-lg-4').find('.card-title').height(maxHeight);
+	jQuery('.kg-col-lg-4').find('.card-text').each(function(index) {
+		if (jQuery(this).height() > maxHeight)
+			maxHeight = jQuery(this).height();
+	});
+	jQuery('.kg-col-lg-4').find('.card-text').height(maxHeight);
+
+	jQuery('.kg_casestudy_card').find('.kg_casestudy_title').each(function(index) {
+		if (jQuery(this).height() > maxHeight)
+			maxHeight = jQuery(this).height();
+	});
+	jQuery('.kg_casestudy_card').find('.kg_casestudy_title').height(maxHeight);
+
+	jQuery('.kg_casestudy_card').find('.kg_casestudy_description').each(function(index) {
+		if (jQuery(this).height() > maxHeight)
+			maxHeight = jQuery(this).height();
+	});
+	jQuery('.kg_casestudy_card').find('.kg_casestudy_description').height(maxHeight);
+</script>
+<script>
+	var url = jQuery(location).attr('href'),
+		parts = url.split("/"),
+		last_part = parts[parts.length - 2];
+	var kg_cat = jQuery(".kg-inner-wrap").find("." + last_part);
+	if (kg_cat.length != 0) {
+		kg_cat.addClass('active');
+		jQuery('.kg-cat-label').text(last_part);
+	} else {
+		jQuery(".kg-inner-wrap").find(".all").addClass('active');
+	}
+</script>
+</body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1786441779 -->

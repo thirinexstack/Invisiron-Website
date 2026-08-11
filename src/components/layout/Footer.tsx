@@ -16,9 +16,12 @@ function Footer() {
           <button className="button brown" type="submit">Subscribe</button>
         </form>
         <div className="socials">
-          <img src={assetPath("youtube-icon-svg-1.png")} alt="YouTube" />
-          <img src={assetPath("linkedin-icon-svg-1.png")} alt="LinkedIn" />
-          <img src={assetPath("whatsapp.svg")} alt="WhatsApp" />
+          <a href="https://www.youtube.com/channel/UCcwBqx3MqkvCBiOtf531_BA" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <img src={assetPath("youtube-icon-svg-1.png")} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/invisiron/?originalSubdomain=sg" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <img src={assetPath("linkedin-icon-svg-1.png")} alt="" />
+          </a>
         </div>
       </div>
 
@@ -40,9 +43,9 @@ function Footer() {
 
       <div>
         <h3>Our Products</h3>
-        <a href={routes.products}>Invisiron® Sentry S-1000</a>
-        <a href={routes.products}>Invisiron® Sentry S-4000</a>
-        <a href={routes.products}>Invisiron® Sentry S-6000</a>
+        <a href={routes.sentryS1000}>Invisiron® Sentry S-1000</a>
+        <a href={routes.sentryS4000}>Invisiron® Sentry S-4000</a>
+        <a href={routes.sentryS6000}>Invisiron® Sentry S-6000</a>
       </div>
 
       <div>
