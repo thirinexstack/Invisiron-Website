@@ -1,5 +1,6 @@
 import { assetPath } from "../config/assets";
 import { routes } from "../config/routes";
+import { scrollToId } from "../utils/scroll";
 
 function C3XOverview() {
   return (
@@ -12,9 +13,9 @@ function C3XOverview() {
           <a className="button brown" href={routes.core}>Discover More</a>
         </div>
       </div>
-      <a className="hero-scroll section-scroll c3x-scroll" href="#testimonials" aria-label="Scroll to testimonials">
+      <button className="hero-scroll section-scroll c3x-scroll" type="button" aria-label="Scroll to testimonials" onClick={() => scrollToId("testimonials")}>
         <span />
-      </a>
+      </button>
     </section>
   );
 }

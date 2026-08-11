@@ -3,6 +3,7 @@ import { routes } from "../config/routes";
 import { C3XOverview } from "../sections/C3XOverview";
 import { TestimonialsStrip } from "../sections/TestimonialsStrip";
 import { VideoFeature } from "../sections/VideoFeature";
+import { scrollToId } from "../utils/scroll";
 
 function HomePage() {
   return (
@@ -14,9 +15,9 @@ function HomePage() {
           <a className="button gold" href={routes.about}>Learn More</a>
         </div>
         <img className="home-graphic" src={assetPath("invisironmaingraphicresized-2.gif")} alt="Invisiron cyber defence graphic" />
-        <a className="hero-scroll" href="#home-intro" aria-label="Scroll to next section">
+        <button className="hero-scroll" type="button" aria-label="Scroll to next section" onClick={() => scrollToId("home-intro")}>
           <span />
-        </a>
+        </button>
       </section>
       <section className="gold-band" id="home-intro">
         <div className="container narrow right">
@@ -24,9 +25,9 @@ function HomePage() {
           <p>With over a million records within our Invisiron® Cyber Threat Intelligence feeds, Invisiron® Security Threat Analysis and Research Team (Invisiron® STAR Team) has implemented unique rulesets to mitigate cyber attacks and protect 100,000+ users worldwide, 24 hours a day, 7 days a week.</p>
           <a className="button brown" href={routes.products}>View Products</a>
         </div>
-        <a className="section-scroll" href="#video-feature" aria-label="Scroll to video section">
+        <button className="section-scroll" type="button" aria-label="Scroll to video section" onClick={() => scrollToId("video-feature")}>
           <span />
-        </a>
+        </button>
       </section>
       <VideoFeature />
       <C3XOverview />

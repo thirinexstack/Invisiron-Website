@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { assetPath } from "../config/assets";
 import { routes } from "../config/routes";
+import { scrollToPageTop } from "../utils/scroll";
 
 const testimonials = [
   {
@@ -86,9 +87,9 @@ function TestimonialsStrip() {
         ))}
       </div>
       <a className="button brown testimonials-more" href={routes.testimonials}>View More Testimonials</a>
-      <a className="back-top" href="#" aria-label="Back to top">
+      <button className="back-top" type="button" aria-label="Back to top" onClick={scrollToPageTop}>
         <span />
-      </a>
+      </button>
     </section>
   );
 }
