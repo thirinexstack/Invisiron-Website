@@ -40,6 +40,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Footer LinkedIn icon should link to the public live-site URL `https://sg.linkedin.com/company/invisiron` so the company page is visible even when the user is not logged in.
 - The Nginx server deployment uses `/opt/invisiron-contact-api/contact-api.mjs` as a systemd service named `invisiron-contact-api`, with SMTP secrets in `/etc/invisiron-contact-api.env` and Nginx proxying `location = /api/contact` to `127.0.0.1:4174`.
 - Home "Download White Paper" opens the live-site style whitepaper popup: dim overlay, white form card, gold top strip, simple close icon, and five whitepaper lead fields.
+- Home down-arrow and back-to-top navigation should use controlled smooth scrolling, with duration scaling by distance so long back-to-top jumps do not feel faster than one-section down-arrow jumps.
+- Home and section down-arrow controls should use the animated two-chevron falling arrow style rather than a circular single-chevron button.
+- Back-to-top controls should keep the original gray square single-chevron UI while using the controlled smooth scroll duration.
+- Home C3X overview should keep the static C3X graphic while using a dark fixed parallax cyber background on desktop, with scroll fallback on touch/mobile.
 - `/c3x-core-technology/` "Download Whitepaper" uses the same whitepaper popup flow as Home before opening the PDF.
 - Contact enquiry and Partner Type custom dropdowns are required fields and must block submission until selected.
 - `/privacy-and-gdpr-policy/` should locally clone the live Invisiron Privacy and GDPR Policy page, including the dark feature-background hero and white policy text section.
