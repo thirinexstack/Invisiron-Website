@@ -17,6 +17,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - `/partner/` partner type field should use the same custom dropdown UI as `/contact-invisiron/`, including an "Other" option.
 - `/case-studies/` should use the live Invisiron case-study archive content with full-resolution WordPress upload images copied locally, displayed as responsive cards for mobile.
 - The first case-study detail page should match the source layout: dark "Case Studies" hero band, then a white two-column content section with the case image fixed at the top-left and text/PDF action flowing on the right.
+- Case-study detail hero bands should use the About page background image `invisiron-about-background-scaled-1024x405-1.jpg` with the live case-study `left top` positioning and a very light separate `mk-video-color-mask` overlay.
 - `/testimonials/` should match the source testimonial archive: centered gold intro heading, white card grid with source testimonial text, logos, names, and roles, collapsing to one column on mobile.
 - `/blog/` should match the source blog archive: centered title, four resource category links with All highlighted on the archive, three-column cards with local full-resolution images, category label, title, excerpt, date, and local/static card behavior instead of outbound live-site links.
 - `/category/articles/` should match the live WordPress Articles archive: no separate archive title/tabs, one-column modern article loop with full-width cropped images, left social/comment rail, byline/category/date metadata, excerpt, gold READ MORE buttons, local images, and local detail routes.
@@ -26,6 +27,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Blog detail related articles should show exactly these three cards in order: "Cybersecurity Tips to follow when working from home", "7 Most Prominent Cyberattacks in ASEAN Countries", and "Upgrade Your Company's Cyber Security Networks Today"; do not show carousel arrow buttons.
 - The three blog-detail related article cards should route to their own local cloned detail pages, not the live Invisiron URLs.
 - The "Cybersecurity Tips to follow when working from home" blog detail should include a gold star before "Most importantly" and make "HERE" a highlighted local link to `/invisiron-cyber-defence-systems/`.
+- The "Upgrade Your Company's Cyber Security Networks Today" blog detail should make "HERE" a highlighted local link to `/invisiron-cyber-defence-systems/`, matching the live source CTA.
+- The "Cyber Security Asia 2022" blog detail should make "Cyber Security Asia" and "Johan Olstenius (Ph.D.)" highlighted external links matching the live source LinkedIn targets.
 - The "7 Most Prominent Cyberattacks in ASEAN Countries" blog detail should make "MORE" a highlighted download link for the INTERPOL ASEAN Cyberthreat Assessment PDF.
 - The "Cyber Defence - It's time to act now..." legal-sector blog detail should convert the live highlighted reference phrases into gold clickable external links matching the live source targets.
 - `/contact-invisiron/` should match the source contact page: no separate hero, a black full-width section below the header, left address/map column, right gold rounded-top "Contact Invisiron" form panel, and a one-column mobile layout.
@@ -34,6 +37,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - `/invisiron-key-features/` hero should keep the local hero height/layout while using the local background image `featurebg.jpg` plus a separate light `mk-video-color-mask` overlay layer.
 - Contact and partner forms submit to `/api/contact`; email credentials must stay in ignored local/deployment environment variables, never tracked source.
 - Footer "Sign Up For Updates" submits subscriber emails to `/api/contact` using the same email configuration.
+- Footer LinkedIn icon should link to the public live-site URL `https://sg.linkedin.com/company/invisiron` so the company page is visible even when the user is not logged in.
 - The Nginx server deployment uses `/opt/invisiron-contact-api/contact-api.mjs` as a systemd service named `invisiron-contact-api`, with SMTP secrets in `/etc/invisiron-contact-api.env` and Nginx proxying `location = /api/contact` to `127.0.0.1:4174`.
 - Home "Download White Paper" opens the live-site style whitepaper popup: dim overlay, white form card, gold top strip, simple close icon, and five whitepaper lead fields.
 - `/c3x-core-technology/` "Download Whitepaper" uses the same whitepaper popup flow as Home before opening the PDF.

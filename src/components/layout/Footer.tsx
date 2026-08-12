@@ -82,7 +82,7 @@ function Footer() {
           <a href="https://www.youtube.com/channel/UCcwBqx3MqkvCBiOtf531_BA" target="_blank" rel="noreferrer" aria-label="YouTube">
             <img src={assetPath("youtube-icon-svg-1.png")} alt="" />
           </a>
-          <a href="https://www.linkedin.com/company/invisiron/?originalSubdomain=sg" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://sg.linkedin.com/company/invisiron" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <img src={assetPath("linkedin-icon-svg-1.png")} alt="" />
           </a>
         </div>

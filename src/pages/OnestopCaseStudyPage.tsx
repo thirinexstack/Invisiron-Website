@@ -6,6 +6,7 @@ function OnestopCaseStudyPage() {
   return (
     <article className="case-detail-page">
       <section className="case-detail-hero">
+        <div className="mk-video-color-mask" />
         <div className="container">
           <h1>Case Studies</h1>
         </div>

@@ -2910,16 +2910,27 @@ hr {
 }
 
 .case-detail-hero {
+  position: relative;
   min-height: 260px;
   display: flex;
   align-items: flex-end;
   padding: 0 0 44px;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-    url("/assets/source/wp-content/uploads/case-studies/invisiron-about-background-scaled-1024x405-1.jpg") center / cover no-repeat;
+  overflow: hidden;
+  background: #000 url("/assets/source/wp-content/uploads/invisiron-about-background-scaled-1024x405-1.jpg") left top / cover no-repeat;
+}
+
+.case-detail-hero .mk-video-color-mask {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  background-color: #000;
+  opacity: 0.04;
 }
 
 .case-detail-hero .container {
+  position: relative;
+  z-index: 1;
   width: min(1070px, calc(100% - 48px));
 }
 
