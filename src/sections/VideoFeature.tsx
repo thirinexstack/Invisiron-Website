@@ -1,6 +1,9 @@
-import { assetPath } from "../config/assets";
+import { useState } from "react";
+import { WhitepaperModal } from "../components/WhitepaperModal";
 
 function VideoFeature() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="video-feature" id="video-feature">
       <div className="video-frame">
@@ -12,9 +15,10 @@ function VideoFeature() {
         />
       </div>
       <h2>Fortify Your Existing Network with ProactiveCyber Defence</h2>
-      <a className="button brown large" href={assetPath("invisiron-fortify-your-network-defence.pdf")} target="_blank" rel="noreferrer">
+      <button className="button brown large" type="button" onClick={() => setIsModalOpen(true)}>
         Download White Paper
-      </a>
+      </button>
+      {isModalOpen && <WhitepaperModal onClose={() => setIsModalOpen(false)} />}
     </section>
   );
 }

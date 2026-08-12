@@ -42,7 +42,7 @@ function TestimonialsPage() {
     <main className="testimonials-page">
       <section className="testimonials-source-section">
         <div className="container testimonials-source-container">
-          <h1>Many have fortified their cyber defences with<br /> Invisiron. Here's what they have to say.</h1>
+          <h1><strong>Many have fortified their cyber defences with<br /> Invisiron. Here's what they have to say.</strong></h1>
           <div className="testimonials-source-grid">
             {testimonials.map((testimonial) => (
               <article className="testimonials-source-card" key={testimonial.name}>

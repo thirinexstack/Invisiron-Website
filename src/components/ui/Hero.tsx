@@ -15,6 +15,7 @@ function renderTitle(title: string) {
 function Hero({ title, dark = true, className = "" }: HeroProps) {
   return (
     <section className={`page-hero ${dark ? "dark" : "light"} ${className}`}>
+      {dark && <div className="mk-video-color-mask" />}
       <div className="container">
         <h1>{renderTitle(title)}</h1>
       </div>

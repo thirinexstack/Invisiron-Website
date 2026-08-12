@@ -1,21 +1,22 @@
 import { useState } from "react";
+import { WhitepaperModal } from "../components/WhitepaperModal";
 import { assetPath } from "../config/assets";
 
 const c3xVideoUrl = "https://invisiron.com/wp-content/uploads/video/Invisiron.mp4";
 
 const c3xFeatures = [
   {
-    icon: "true-stealth-mode2.png",
+    icon: "invisiron-invisible-icon100x.png",
     title: "Invisible Stealth Mode",
     text: "The Invisiron® Cyber Defence device operates in stealth mode, without any IP addresses or Media Access Control (MAC) addresses. This renders it invisible to cyber criminals when deployed. Hackers attempting to penetrate the network will not be able to detect the presence of an Invisiron® device.",
   },
   {
-    icon: "invisiron-bandwidth-icon100x-100x100.png",
+    icon: "invisiron-speed-icon100x.png",
     title: "Ultra Fast In-Line Packet Processing Speed",
     text: "Network packets are processed at near line rate without degrading the Internet bandwidth.",
   },
   {
-    icon: "invisiron-atm-icon100x-100x100.png",
+    icon: "invisiron-dpi-icon100x.png",
     title: "Autonomous Threat Prevention",
     text: "The Invisiron Cyber Defence Platform operates fully autonomous with no user intervention needed. Threats are detected and mitigated fully automatically and in real-time.",
   },
@@ -23,6 +24,7 @@ const c3xFeatures = [
 
 function CorePage() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [isWhitepaperOpen, setIsWhitepaperOpen] = useState(false);
 
   return (
     <>
@@ -64,11 +66,12 @@ function CorePage() {
           ))}
         </div>
         <div className="core-detail-action">
-          <a className="button brown large" href={assetPath("invisiron-fortify-your-network-defence.pdf")} target="_blank" rel="noreferrer">
+          <button className="button brown large" type="button" onClick={() => setIsWhitepaperOpen(true)}>
             Download Whitepaper
-          </a>
+          </button>
         </div>
       </section>
+      {isWhitepaperOpen && <WhitepaperModal onClose={() => setIsWhitepaperOpen(false)} />}
     </>
   );
 }

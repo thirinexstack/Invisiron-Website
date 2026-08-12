@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { WhitepaperModal } from "../components/WhitepaperModal";
 import type { BlogDetail } from "../data/blogDetails";
 import { relatedBlogPosts } from "../data/relatedPosts";
 import { PostCard } from "../features/resources/components/PostCard";
@@ -42,26 +43,7 @@ function BlogDetailPage({ detail }: BlogDetailPageProps) {
         </div>
       </section>
 
-      {isModalOpen && (
-        <div className="blog-download-modal" role="dialog" aria-modal="true" aria-labelledby="blog-download-title">
-          <button className="blog-download-backdrop" type="button" aria-label="Close popup" onClick={() => setIsModalOpen(false)} />
-          <div className="blog-download-dialog">
-            <button className="blog-download-close" type="button" aria-label="Close popup" onClick={() => setIsModalOpen(false)}>
-              ×
-            </button>
-            <h2 id="blog-download-title">Fortify Your Existing Network with Proactive Cyber Defence</h2>
-            <p>Download Invisiron's exclusive Whitepaper</p>
-            <form>
-              <input type="text" placeholder="Full Name*" />
-              <input type="email" placeholder="Work Email*" />
-              <input type="text" placeholder="Job Title*" />
-              <input type="text" placeholder="Company Name*" />
-              <input type="tel" placeholder="Work Phone Number*" />
-              <button type="button">SUBMIT</button>
-            </form>
-          </div>
-        </div>
-      )}
+      {isModalOpen && <WhitepaperModal onClose={() => setIsModalOpen(false)} />}
     </section>
   );
 }

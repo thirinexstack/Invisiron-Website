@@ -33,6 +33,7 @@ const routes = {
   technologyConsultancyCaseStudy: "/casestudy/technology-consultancy/",
   testimonials: "/testimonials/",
   contact: "/contact-invisiron/",
+  privacy: "/privacy-and-gdpr-policy/",
 } as const;
 
 export { routes };
