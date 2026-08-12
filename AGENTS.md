@@ -34,6 +34,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - `/invisiron-key-features/` hero should keep the local hero height/layout while using the local background image `featurebg.jpg` plus a separate light `mk-video-color-mask` overlay layer.
 - Contact and partner forms submit to `/api/contact`; email credentials must stay in ignored local/deployment environment variables, never tracked source.
 - Footer "Sign Up For Updates" submits subscriber emails to `/api/contact` using the same email configuration.
+- The Nginx server deployment uses `/opt/invisiron-contact-api/contact-api.mjs` as a systemd service named `invisiron-contact-api`, with SMTP secrets in `/etc/invisiron-contact-api.env` and Nginx proxying `location = /api/contact` to `127.0.0.1:4174`.
 - Home "Download White Paper" opens the live-site style whitepaper popup: dim overlay, white form card, gold top strip, simple close icon, and five whitepaper lead fields.
 - `/c3x-core-technology/` "Download Whitepaper" uses the same whitepaper popup flow as Home before opening the PDF.
 - Contact enquiry and Partner Type custom dropdowns are required fields and must block submission until selected.
