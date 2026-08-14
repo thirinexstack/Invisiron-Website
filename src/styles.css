@@ -321,7 +321,7 @@ main {
   margin: 0 0 27px;
   max-width: 650px;
   color: #fff;
-  font-size: clamp(58px, 4.4vw, 82px);
+  font-size: clamp(54px, 4.1vw, 76px);
   line-height: 0.94;
   font-weight: 900;
 }
@@ -330,7 +330,7 @@ main {
   margin: 0 0 49px;
   max-width: 720px;
   color: #efefef;
-  font-size: clamp(24px, 1.65vw, 32px);
+  font-size: 30px;
   line-height: 1.05;
   font-weight: 300;
   white-space: nowrap;
@@ -396,7 +396,7 @@ main {
   padding: 0 28px;
   border: 2px solid transparent;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -426,7 +426,7 @@ main {
 .button.large {
   min-height: 48px;
   padding-inline: 26px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .button.outline {
@@ -603,7 +603,7 @@ main {
   width: min(1140px, calc(100% - 48px));
   margin: 0;
   color: #fff;
-  font-size: clamp(24px, 2vw, 34px);
+  font-size: 32px;
   line-height: 1.15;
   font-weight: 900;
 }
@@ -656,7 +656,7 @@ main {
 .c3x-copy h2 {
   margin: 0 0 22px;
   color: #fff;
-  font-size: clamp(42px, 4vw, 58px);
+  font-size: 51px;
   line-height: 0.95;
   font-weight: 900;
 }
@@ -899,27 +899,44 @@ main {
 .core-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 36px;
-  padding-top: 42px;
+  width: min(1140px, calc(100% - 96px));
+  gap: 30px;
+  padding-top: 50px;
 }
 
 .core-feature-grid article {
   min-width: 0;
+  display: grid;
+  grid-template-rows: 126px 58px auto;
+  row-gap: 25px;
+  justify-items: center;
   text-align: center;
 }
 
 .core-feature-grid img {
   width: auto;
-  max-width: 250px;
-  height: 150px;
+  height: auto;
   display: block;
-  margin: 0 auto 34px;
+  align-self: end;
+  margin: 0;
   object-fit: contain;
+}
+
+.core-feature-grid article:nth-child(1) img {
+  width: 125px;
+}
+
+.core-feature-grid article:nth-child(2) img {
+  width: 101px;
+}
+
+.core-feature-grid article:nth-child(3) img {
+  width: 166px;
 }
 
 .core-feature-grid h3 {
   min-height: 58px;
-  margin: 0 0 26px;
+  margin: 0;
   color: #dda63a;
   font-size: 24px;
   line-height: 1.28;
@@ -927,7 +944,7 @@ main {
 }
 
 .core-feature-grid p {
-  max-width: 380px;
+  max-width: 365px;
   margin: 0 auto;
   color: #444;
   font-size: 16px;
@@ -938,7 +955,7 @@ main {
 .core-detail-action {
   display: flex;
   justify-content: center;
-  margin-top: 72px;
+  margin-top: 70px;
 }
 
 .page-hero {
@@ -1094,8 +1111,10 @@ main {
 }
 
 .privacy-page .page-hero {
+  position: relative;
   min-height: 260px;
   align-items: flex-end;
+  overflow: hidden;
   padding-bottom: 44px;
 }
 
@@ -1106,14 +1125,30 @@ main {
 }
 
 .privacy-page .page-hero.dark {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.7)),
-    url("/assets/source/wp-content/uploads/invisiron-features-background.jpg-scaledblur-1024x576-1.jpg") center / cover;
+  background-image: url("/assets/source/wp-content/uploads/privacy-feature-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.privacy-page .page-hero .mk-video-color-mask {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  background-color: #000;
+  opacity: 0.08;
+}
+
+.privacy-page .page-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .privacy-page .page-hero h1 {
   font-size: clamp(32px, 3.2vw, 40px);
   text-transform: none;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
 }
 
 .privacy-content-section {
@@ -3648,11 +3683,11 @@ hr {
   }
 
   .home-copy h1 {
-    font-size: clamp(52px, 4.3vw, 72px);
+    font-size: clamp(48px, 4vw, 66px);
   }
 
   .home-copy p {
-    font-size: clamp(23px, 1.9vw, 30px);
+    font-size: 27px;
   }
 
 }
@@ -3751,7 +3786,7 @@ hr {
     max-width: 100%;
     margin-inline: auto;
     margin-bottom: 18px;
-    font-size: clamp(30px, 7.8vw, 38px);
+    font-size: clamp(28px, 7.2vw, 35px);
     line-height: 0.98;
     overflow-wrap: break-word;
     text-align: center;
@@ -3761,7 +3796,7 @@ hr {
     max-width: 100%;
     margin-inline: auto;
     margin-bottom: 32px;
-    font-size: clamp(18px, 4.8vw, 22px);
+    font-size: clamp(17px, 4.4vw, 20px);
     line-height: 1.12;
     white-space: normal;
     text-align: center;

@@ -68,7 +68,7 @@ const policyHtml = `
 function PrivacyPolicyPage() {
   return (
     <div className="privacy-page">
-      <Hero title="Privacy and GDPR Policy" className="privacy-hero" />
+      <Hero title="PRIVACY AND GDPR POLICY" className="privacy-hero" />
       <section className="privacy-content-section">
         <div className="privacy-content" dangerouslySetInnerHTML={{ __html: policyHtml }} />
       </section>

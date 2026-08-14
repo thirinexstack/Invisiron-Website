@@ -37,7 +37,7 @@ const pageTitles: Record<string, string> = {
   [routes.cases]: "Case Studies - Invisiron",
   [routes.testimonials]: "Testimonials - Invisiron",
   [routes.contact]: "Contact Invisiron - Invisiron",
-  [routes.privacy]: "Privacy and GDPR Policy - Invisiron",
+  [routes.privacy]: "PRIVACY AND GDPR POLICY - Invisiron",
 };
 
 function getPageTitle(path: string) {

@@ -47,3 +47,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - `/c3x-core-technology/` "Download Whitepaper" uses the same whitepaper popup flow as Home before opening the PDF.
 - Contact enquiry and Partner Type custom dropdowns are required fields and must block submission until selected.
 - `/privacy-and-gdpr-policy/` should locally clone the live Invisiron Privacy and GDPR Policy page, including the dark feature-background hero and white policy text section.
+- `/privacy-and-gdpr-policy/` should display the page title text as `PRIVACY AND GDPR POLICY` in capital letters.
+- `/privacy-and-gdpr-policy/` hero background image should be brighter with only a light dark overlay, while keeping the white title readable.
