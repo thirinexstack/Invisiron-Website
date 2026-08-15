@@ -370,12 +370,14 @@ main {
 .hero-scroll span::after {
   content: "";
   position: absolute;
+  left: 50%;
+  top: 50%;
   width: 18px;
   height: 18px;
   border-left: 5px solid var(--arrow-color);
   border-bottom: 5px solid var(--arrow-color);
   opacity: 0;
-  transform: translate(5px, -6px) rotate(-45deg);
+  transform: translate(-50%, -50%) translateY(-6px) rotate(-45deg);
   animation: arrow-glide 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   will-change: opacity, transform;
 }
@@ -522,12 +524,14 @@ main {
 .section-scroll span::after {
   content: "";
   position: absolute;
+  left: 50%;
+  top: 50%;
   width: 18px;
   height: 18px;
   border-left: 5px solid var(--arrow-color);
   border-bottom: 5px solid var(--arrow-color);
   opacity: 0;
-  transform: translate(5px, -6px) rotate(-45deg);
+  transform: translate(-50%, -50%) translateY(-6px) rotate(-45deg);
   animation: arrow-glide 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   will-change: opacity, transform;
 }
@@ -543,23 +547,23 @@ main {
 @keyframes arrow-glide {
   0% {
     opacity: 0;
-    transform: translate3d(5px, -10px, 0) rotate(-45deg);
+    transform: translate(-50%, -50%) translate3d(0, -10px, 0) rotate(-45deg);
   }
 
   28% {
     opacity: 0.72;
-    transform: translate3d(5px, -2px, 0) rotate(-45deg);
+    transform: translate(-50%, -50%) translate3d(0, -2px, 0) rotate(-45deg);
   }
 
   58% {
     opacity: 0.72;
-    transform: translate3d(5px, 5px, 0) rotate(-45deg);
+    transform: translate(-50%, -50%) translate3d(0, 5px, 0) rotate(-45deg);
   }
 
   88%,
   100% {
     opacity: 0;
-    transform: translate3d(5px, 13px, 0) rotate(-45deg);
+    transform: translate(-50%, -50%) translate3d(0, 13px, 0) rotate(-45deg);
   }
 }
 
