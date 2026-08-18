@@ -3350,6 +3350,26 @@ hr {
   resize: vertical;
 }
 
+.math-captcha {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: -5px 0 20px;
+}
+
+.math-captcha label {
+  flex: 0 0 auto;
+  color: #111;
+  font-size: 15px;
+  line-height: 37px;
+}
+
+.contact-source-form .math-captcha input {
+  width: 69px;
+  min-height: 37px;
+  margin-bottom: 0;
+}
+
 .contact-source-form input.is-invalid-field,
 .contact-source-form textarea.is-invalid-field {
   margin-bottom: 6px;

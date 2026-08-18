@@ -5,6 +5,39 @@ const enquiryOptions = ["Sales Enquiry", "Technical Support", "Be an Invisiron P
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^\d{7,}$/;
 
+type MathCaptcha = {
+  left: number;
+  operator: "+" | "-" | "*" | "/";
+  right: number;
+  answer: number;
+};
+
+function createMathCaptcha(): MathCaptcha {
+  const operator = ["+", "-", "*", "/"][Math.floor(Math.random() * 4)] as MathCaptcha["operator"];
+
+  if (operator === "+") {
+    const left = Math.floor(Math.random() * 13) + 3;
+    const right = Math.floor(Math.random() * 8) + 2;
+    return { left, operator, right, answer: left + right };
+  }
+
+  if (operator === "-") {
+    const right = Math.floor(Math.random() * 8) + 2;
+    const answer = Math.floor(Math.random() * 10) + 1;
+    return { left: right + answer, operator, right, answer };
+  }
+
+  if (operator === "*") {
+    const left = Math.floor(Math.random() * 7) + 2;
+    const right = Math.floor(Math.random() * 6) + 2;
+    return { left, operator, right, answer: left * right };
+  }
+
+  const right = Math.floor(Math.random() * 5) + 2;
+  const answer = Math.floor(Math.random() * 9) + 1;
+  return { left: right * answer, operator, right, answer };
+}
+
 function getEmailError(value: string) {
   if (!value) return "This field is required.";
   if (!emailPattern.test(value)) return "Please enter a valid email address.";
@@ -23,7 +56,9 @@ function ContactPage() {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [enquiry, setEnquiry] = useState("");
+  const [captcha, setCaptcha] = useState<MathCaptcha>(() => createMathCaptcha());
   const enquiryButtonRef = useRef<HTMLButtonElement>(null);
+  const captchaInputRef = useRef<HTMLInputElement>(null);
 
   const clearFieldError = (field: string) => {
     setFieldErrors((errors) => {
@@ -85,6 +120,7 @@ function ContactPage() {
                 phone: String(formData.get("phone") || "").trim(),
                 company: String(formData.get("company") || "").trim(),
                 message: String(formData.get("message") || "").trim(),
+                captchaAnswer: String(formData.get("captchaAnswer") || "").trim(),
               };
 
               if (!values.name) nextErrors.name = "This field is required.";
@@ -95,13 +131,23 @@ function ContactPage() {
               if (!values.company) nextErrors.company = "This field is required.";
               if (!enquiry) nextErrors.enquiry = "This field is required.";
               if (!values.message) nextErrors.message = "This field is required.";
+              if (!values.captchaAnswer) {
+                nextErrors.captchaAnswer = "This field is required.";
+              } else if (Number(values.captchaAnswer) !== captcha.answer) {
+                nextErrors.captchaAnswer = "Please enter the correct answer.";
+              }
 
               if (Object.keys(nextErrors).length > 0) {
                 setFieldErrors(nextErrors);
                 setStatus("error");
                 setError("");
+                if (nextErrors.captchaAnswer) {
+                  setCaptcha(createMathCaptcha());
+                  if (captchaInputRef.current) captchaInputRef.current.value = "";
+                }
                 const firstField = Object.keys(nextErrors)[0];
                 if (firstField === "enquiry") enquiryButtonRef.current?.focus();
+                else if (firstField === "captchaAnswer") captchaInputRef.current?.focus();
                 else form.querySelector<HTMLElement>(`[name="${firstField}"]`)?.focus();
                 return;
               }
@@ -120,6 +166,7 @@ function ContactPage() {
                 });
                 form.reset();
                 setEnquiry("");
+                setCaptcha(createMathCaptcha());
                 setStatus("sent");
               } catch (submitError) {
                 setError(submitError instanceof Error ? submitError.message : "Unable to send your message.");
@@ -249,6 +296,26 @@ function ContactPage() {
                   onChange={() => clearFieldError("message")}
                 />
                 {fieldErrors.message && <div className="field-error">This field is required.</div>}
+                <div className="math-captcha">
+                  <label htmlFor="contact-captcha-answer">
+                    {captcha.left} {captcha.operator} {captcha.right} =
+                  </label>
+                  <input
+                    required
+                    ref={captchaInputRef}
+                    id="contact-captcha-answer"
+                    name="captchaAnswer"
+                    type="text"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    autoComplete="off"
+                    className={fieldErrors.captchaAnswer ? "is-invalid-field" : undefined}
+                    aria-label={`${captcha.left} ${captcha.operator} ${captcha.right}`}
+                    aria-invalid={Boolean(fieldErrors.captchaAnswer)}
+                    onChange={() => clearFieldError("captchaAnswer")}
+                  />
+                </div>
+                {fieldErrors.captchaAnswer && <div className="field-error">{fieldErrors.captchaAnswer}</div>}
                 <button type="submit" disabled={status === "sending"}>
                   {status === "sending" ? "Sending..." : "Submit"}
                 </button>
